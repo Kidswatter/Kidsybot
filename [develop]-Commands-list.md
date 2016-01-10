@@ -35,3 +35,7 @@ Sets the volume of the bot. (ex `!volume 5 or !volume +5`)
 ### `!skip`
 
 This will skip the current song.
+
+### `!shuffle`
+
+This will shuffle the music queue
