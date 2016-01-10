@@ -14,7 +14,7 @@ This will add the person 'username' to the blacklist.
 
 ### `!play <URL>`
 
-This play's the song. (ex: `!play https://www.youtube.com/watch?v=p7ZsBPK656s`)
+This will play the selected song. (ex: `!play https://www.youtube.com/watch?v=p7ZsBPK656s`)
 
 ### `!pause`
 
