@@ -1,6 +1,6 @@
 # FAQ
 
-Q:_'pip' is not recognized as an internal or external command_
+Q:`'pip' is not recognized as an internal or external command`
 
 A: http://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command
 
