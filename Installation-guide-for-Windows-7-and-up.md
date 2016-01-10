@@ -95,7 +95,7 @@ When the extraction finishes, a new window should appear with the following cont
 
 Double click on the `config` folder to open it and then open `options.txt` in a text editor OTHER than Notepad, otherwise you'll see one big line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").
 
-Change the configuration settings to what you need according to [this wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/%5Bdevelop%5D-Configuration-file "develop branch configuration file").
+Change the configuration settings to what you need according to [this wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration-file "develop branch configuration file").
 
 ### 3.c: Start the bot!
 
@@ -110,6 +110,6 @@ Go back to the main RhinoBot directory and double click `runbot.bat`. If you see
     --Server List--
     [Server Name(s)]
 
-that means everything is good and running correctly! You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/%5Bdevelop%5D-Commands-list "Commands list") to find out how to use your bot. :grin:
+that means everything is good and running correctly! You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot. :grin:
 
 If you see an error, you might want to try installing dependencies by hand. You can do this by opening a command prompt in the MusicBot folder and executing the command `pip install -r requirements.txt`.
