@@ -35,7 +35,7 @@
 
 - `CommandPrefix`: Text needed before commands to be registered as a command (i.e setting this to `bot.` changes all commands to `bot.commandname`).
 
-### `[MusicBot]`
+### `[MusicBot]` section
 
 - `DaysActive`: This is the number of days users should be active to be added in the whitelist automatically.
 - `WhiteListCheck`: Enables / disables the whitelist.
