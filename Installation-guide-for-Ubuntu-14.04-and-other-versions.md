@@ -2,20 +2,20 @@
 
 # Table of Contents
 
-Introduction
+[Introduction](#introduction)
 
-1. Preparation
-    - 1.a: SSH into machine and perform setup
-    - 1.b: Updating package lists and adding repositories
-2. Step 2: Installing Git
-3. Step 3: Installing Python
-4. Step 4: Installing ffmpeg
-5. Step 5: Installing opus codec
-6. Step 6: Install and configure RhinoBot
-    - 6.a: Download RhinoBot
-    - 6.b: Change configuration file
-    - 6.c: Start the bot (non permanent for testing)
-    - 6.d: Start the bot (permanent with screen)
+1. [Preparation](#preparation)
+    - [1.a: Setup Ubuntu](#1a-setup-ubuntu)
+    - [1.b: Updating package lists and adding repositories](#1b-updating-package-lists-and-adding-repositories)
+2. [Step 2: Installing Git](#step-2-installing-git)
+3. [Step 3: Installing Python](#step-3-installing-python)
+4. [Step 4: Installing ffmpeg](#step-4-installing-ffmpeg)
+5. [Step 5: Installing opus codec](#step-5-installing-opus-codec)
+6. [Step 6: Install and configure RhinoBot](#step-6-install-and-configure-rhinobot)
+    - [6.a: Download RhinoBot](#6a-download-rhinobot)
+    - [6.b: Change configuration file](#6b-change-configuration-file)
+    - [6.c: Start the bot (non permanent for testing)](#6c-start-the-bot-non-permanent-for-testing)
+    - [6.d: Start the bot (permanent with screen)](#6d-start-the-bot-permanent-with-screen)
 
 # Introduction
 
