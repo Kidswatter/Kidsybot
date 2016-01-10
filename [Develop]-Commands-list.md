@@ -16,3 +16,5 @@
 
 `!Volume [ 1 - 100 | +X | -X ]` Sets the volume of the bot. (ex !volume 5 or !volume +5)
 
+`!skip` This will skip the current song.
+
