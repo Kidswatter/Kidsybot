@@ -30,7 +30,7 @@ This will print out all the songs in queue.
 
 ### `!volume [ 1 - 100 | +X | -X ]`
 
-Sets the volume of the bot. (ex !volume 5 or !volume +5)
+Sets the volume of the bot. (ex `!volume 5 or !volume +5`)
 
 ### `!skip`
 
