@@ -31,4 +31,8 @@ A: If Rhinobot is running in my discord, the bot isn't broken. I keep everything
 
 Q: `AttributeError: module 'discord' has no attribute 'opus'`
 
-A:A: Whatever you did, you did something wrong.  The old version of discord.py (which you get by running pip install discord.py) doesn't support voice; only the async branch does.  You need git to install that one, which is why we have you install git.
+A: Whatever you did, you did something wrong.  The old version of discord.py (which you get by running pip install discord.py) doesn't support voice; only the async branch does.  You need git to install that one, which is why we have you install git.
+
+Q:`I'm getting this error! http://prntscr.com/9o94q2`
+
+A: You have entered the wrong login details in the options file. Open the file and edit it.
