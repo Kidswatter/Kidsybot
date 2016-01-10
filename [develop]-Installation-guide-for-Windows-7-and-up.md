@@ -2,12 +2,16 @@
 
 # Table of Contents
 
-1. Step 1: Installing Git
-    - 1.a: Download Git installer
-    - 1.b: Install Git
-2. Step 2: Installing Python
-    - 2.a Download Python installer
-    - 2.b: Install Python
+1. [Step 1: Installing Git](#step-1-installing-git)
+    - [1.a: Download Git installer](#1a-download-git-installer)
+    - [1.b: Install Git](#1b-install-git)
+2. [Step 2: Installing Python](#step-2-installing-python-351)
+    - [2.a Download Python installer](#2a-downloading-python-installer)
+    - [2.b: Install Python](#2b-install-python-351
+3. [Step 3: Install and configure RhinoBot](#step-3-install-and-configure-rhinobot)
+    - [3.a: Download RhinoBot](#3a-download-rhinobot)
+    - [3.b: Change configuration file](#3b-change-configuration-file)
+    - [3.c: Start the bot!](#3c-start-the-bot)
 
 # Step 1: Installing Git
 
@@ -41,7 +45,7 @@ Git should begin to install and you should see the progress bar slowly fill as t
 
 ![Git installer progress bar](http://i.imgur.com/GETzy0w.png)
 
-Once that is done, uncheck *'View ReleaseNotes.html'* and click the button labelled *Finish*.
+Once that is done, uncheck *'View ReleaseNotes.html'* and click the button labeled *Finish*.
 
 ![Git installer completion screen](http://i.imgur.com/faa1jji.png)
 
@@ -67,7 +71,7 @@ Python should begin to install and you should see the progress bar slowly fill a
 
 ![Python installer progress bar](http://i.imgur.com/bSUIO10.png)
 
-Once that is done, click the button labelled *Close* to finish installation.
+Once that is done, click the button labeled *Close* to finish installation.
 
 ![Python installer completion screen](http://i.imgur.com/zb9s0gA.png)
 
