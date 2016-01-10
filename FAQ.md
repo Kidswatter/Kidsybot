@@ -28,3 +28,7 @@ A: Open up the command prompt and type `pip install --upgrade git+https://github
 Q:`I'm having other errors with the bot, it has to be broken`
 
 A: If Rhinobot is running in my discord, the bot isn't broken. I keep everything as updated as possible!
+
+Q: `AttributeError: module 'discord' has no attribute 'opus'`
+
+A:A: Whatever you did, you did something wrong.  The old version of discord.py (which you get by running pip install discord.py) doesn't support voice; only the async branch does.  You need git to install that one, which is why we have you install git.
