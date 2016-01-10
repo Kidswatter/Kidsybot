@@ -4,11 +4,11 @@
 
 [Introduction](#introduction)
 
-1. [Preparation](#preparation)
+1. [Step 1: Preparation](#step-1-preparation)
     - [1.a: Setup Ubuntu](#1a-setup-ubuntu)
     - [1.b: Updating package lists and adding repositories](#1b-updating-package-lists-and-adding-repositories)
 2. [Step 2: Installing Git](#step-2-installing-git)
-3. [Step 3: Installing Python](#step-3-installing-python)
+3. [Step 3: Installing Python 3.5](#step-3-installing-python-35)
 4. [Step 4: Installing ffmpeg](#step-4-installing-ffmpeg)
 5. [Step 5: Installing opus codec](#step-5-installing-opus-codec)
 6. [Step 6: Install and configure RhinoBot](#step-6-install-and-configure-rhinobot)
