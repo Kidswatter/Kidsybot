@@ -29,7 +29,7 @@
 
 ### `[Permissions]` section
 
-- `OwnerID`: The Discord user ID to use as the owner (full permissions on bot). To find your Discord user ID, type `\@your_username` and your ID is the numbers in the message that is highlighted like a mention.
+- `OwnerID`: The Discord user ID to use as the owner (full permissions on bot). To find your Discord user ID, type `<@your_username>` and your ID is the numbers in the message that is highlighted like a mention.
 
 ### `[Chat]` section
 
