@@ -49,7 +49,7 @@ Once that is done, uncheck *'View ReleaseNotes.html'* and click the button label
 
 ![Git installer completion screen](http://i.imgur.com/faa1jji.png)
 
-You have now successfully installed Git onto your machine! :)
+You have now successfully installed Git onto your machine! :smile:
 
 # Step 2: Installing Python 3.5.1
 
@@ -75,8 +75,7 @@ Once that is done, click the button labeled *Close* to finish installation.
 
 ![Python installer completion screen](http://i.imgur.com/zb9s0gA.png)
 
-
-You have now successfully installed Python onto your machine! :)
+You have now successfully installed Python onto your machine! :smile:
 
 # Step 3: Install and configure RhinoBot
 
