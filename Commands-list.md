@@ -1,4 +1,4 @@
-# RhinoBot's commands in the `develop` branch
+# RhinoBot's commands
 
 ### `!id`
 
