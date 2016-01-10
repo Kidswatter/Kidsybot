@@ -37,8 +37,8 @@
 
 ### `[MusicBot]`
 
-- `DaysActive`: This is the amount of days they should be active to be added in the whitelist automaticly.
+- `DaysActive`: This is the number of days users should be active to be added in the whitelist automatically.
 - `WhiteListCheck`: Enables / disables the whitelist.
-- `SkipsRequired`: The amount of skips required to skip the song. (owners of the bot can override this command)
-- `SaveVideos`: If enabled it saves all the played songs.
-- `NowPlayingMentions`: If enabled the bot will announce when a new song comes up.
+- `SkipsRequired`: The amount of skips required to skip the song (owners of the bot can override this command).
+- `SaveVideos`: Saves all the played songs into the cache.
+- `NowPlayingMentions`: The bot will announce and mention the requestee when a requested song is played.
