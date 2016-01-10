@@ -1,4 +1,4 @@
-# What are RhinoBot's commands?
+# RhinoBot's commands in the `develop` branch
 
 ### `!id`
 
