@@ -1,7 +1,6 @@
 # FAQ
 
 Q:`'pip' is not recognized as an internal or external command`
-
 A: http://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command
 
 Q:`Bot prints 'no, not whitelisted and new' when I try to play something`
