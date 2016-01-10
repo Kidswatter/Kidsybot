@@ -7,7 +7,7 @@
     - [1.b: Install Git](#1b-install-git)
 2. [Step 2: Installing Python](#step-2-installing-python-351)
     - [2.a Download Python installer](#2a-downloading-python-installer)
-    - [2.b: Install Python](#2b-install-python-351
+    - [2.b: Install Python](#2b-install-python-351)
 3. [Step 3: Install and configure RhinoBot](#step-3-install-and-configure-rhinobot)
     - [3.a: Download RhinoBot](#3a-download-rhinobot)
     - [3.b: Change configuration file](#3b-change-configuration-file)
