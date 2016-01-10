@@ -1,6 +1,8 @@
-# What are its commands?
+# What are RhinoBot's commands?
 
-`!id` This will give you your id.
+### `!id`
+
+This will give you your id.
 
 ### `!whitelist @username`
 
@@ -26,7 +28,7 @@ This will resume the song.
 
 This will print out all the songs in queue.
 
-### `!Volume [ 1 - 100 | +X | -X ]`
+### `!volume [ 1 - 100 | +X | -X ]`
 
 Sets the volume of the bot. (ex !volume 5 or !volume +5)
 
