@@ -38,4 +38,4 @@ This will skip the current song.
 
 ### `!shuffle`
 
-This will shuffle the music queue
+This will shuffle the music queue.
