@@ -93,7 +93,7 @@ When the extraction finishes, a new window should appear with the following cont
 
 ![RhinoBot contents](http://i.imgur.com/Tm0NEoW.png)
 
-Double click on the `config` folder to open it and then open `settings.txt` in a text editor OTHER than Notepad, otherwise you'll see one big line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").
+Double click on the `config` folder to open it and then open `options.txt` in a text editor OTHER than Notepad, otherwise you'll see one big line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").
 
 Change the configuration settings to what you need according to [this wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/%5Bdevelop%5D-Configuration-file "develop branch configuration file").
 
