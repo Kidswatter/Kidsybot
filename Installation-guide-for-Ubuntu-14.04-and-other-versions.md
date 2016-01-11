@@ -1,4 +1,4 @@
-**THIS GUIDE IS FOR INSTALLING THE `develop` BRANCH ONTO A UBUNTU 14.04.** If you are not using Ubuntu 14.0.4, please use another article to install your RhinoBot. This guide should also work with other versions of Ubuntu (citations needed).
+**THIS GUIDE IS FOR INSTALLING THE `develop` BRANCH OF THE MUSIC BOT ON A MACHINE RUNNING UBUNTU 14.04.** If you are not using Ubuntu 14.04, please use another article to install your RhinoBot. This guide has the possibility of screwing up other versions of Ubuntu.
 
 # Table of Contents
 
@@ -19,7 +19,7 @@
 
 # Introduction
 
-A Ubuntu server is a very cheap way to have your RhinoBot to stay online permanently, as many websites offer cheap VPS hosting for Ubuntu servers. If you're looking for a cheap server provider, I (@deansheather) would suggest a [Digital Ocean](https://www.digitalocean.com/) (not an affiliate link) *'droplet'* for hosting your server. All you need to run this bot is a $5 per month 512mb droplet running Ubuntu 14.04.
+A Ubuntu server is a very cheap way to have your RhinoBot to stay online permanently, as many websites offer cheap VPS hosting for Ubuntu servers. If you're looking for a cheap server provider, (@deansheather) would suggest a [Digital Ocean](https://www.digitalocean.com/) (not an affiliate link) *'droplet'* for hosting your server. All you need to run this bot is a $5 per month 512mb droplet running Ubuntu 14.04.
 
 Every block of code written in a box that looks like the box below should be run on your server unless otherwise stated.
 
@@ -40,8 +40,9 @@ First of all, we'll add the repositories needed to install prerequisites for Rhi
     sudo add-apt-repository ppa:fkrull/deadsnakes -y
     sudo add-apt-repository ppa:mc3man/trusty-media -y
     sudo apt-get update -y
+    sudo apt-get upgrade -y
     sudo apt-get dist-upgrade -y
-    sudo apt-get install gcc yasm unzip -y
+    sudo apt-get install build-essential unzip -y
 
 # Step 2: Installing Git
 
@@ -73,27 +74,9 @@ You have now successfully installed ffmpeg onto your machine! :)
 
 # Step 5: Installing opus codec
 
-This is where it gets very complicated, so make sure you pay **very close** attention to the instructions.
+To install opus, which is needed to run RhinoBot, run the following:
 
-Run the following:
-
-    wget http://downloads.xiph.org/releases/opus/opus-1.1.1.tar.gz
-    tar -xzf opus1.1.1.tar.gz
-    ./configure --prefix=/usr
-
-Have a quick scroll through the terminal window and look for any errors. If you see something that says `Type "make; make install" to compile and install` near the bottom then you should be good to continue without asking for help on the RhinoBot Discord server ([https://discord.gg/0iqN3da4zqrSz036](https://discord.gg/0iqN3da4zqrSz036)).
-
-    make
-
-Check for errors once again before proceeding.
-
-    sudo make install
-
-Now you need to restart your machine if no errors occurred.
-
-    sudo reboot
-
-Reconnect via SSH to your machine.
+    sudo apt-get install libopus-dev -y
 
 You have now successfully installed opus onto your machine! :)
 
@@ -111,7 +94,7 @@ Run the following commands to download RhinoBot:
 
 ### 6.b: Change configuration file
 
-The easiest way to edit the configuration is with SFTP software, such as CyberDuck or WinSCP. CyberDuck works with Windows and Mac computers, whereas WinSCP only works with Windows computers. Due to this, this tutorial will explain how to use CyberDuck to access your server's files (sorry Linux users...).
+A fairly easy way to edit the configuration is with SFTP software, such as CyberDuck or WinSCP or Filezilla. Filezilla works on Linux, Windows, and Mac computers, CyberDuck works with Windows and Mac computers, and WinSCP only works with Windows computers. Due to _reasons_, this tutorial will explain how to use CyberDuck to access your server's files (sorry Linux users...).
 
 **NOTE:** CyberDuck **is** free software, but you will be prompted for donations each time you use it. If you donate, you will receive a license key which will remove the donation prompt.
 
@@ -152,13 +135,13 @@ Run this:
 If you see this:
 
     Connected!
-    
+
     Username: [Bot Username]
     ID: [Bot User ID]
     --Server List--
     [Server Name(s)]
 
-that means everything is good and running correctly! 
+that means everything is good and running correctly!
 
 If you see an error, you might want to try installing dependencies by hand. You can do this by executing the command `pip3 install -r requirements.txt`.
 
