@@ -41,9 +41,7 @@ First of all, we'll add the repositories needed to install prerequisites for Rhi
     sudo add-apt-repository ppa:mc3man/trusty-media -y
     sudo apt-get update -y
     sudo apt-get dist-upgrade -y
-    sudo apt-get install gcc -y
-    sudo apt-get install yasm -y
-    sudo apt-get install unzip -y
+    sudo apt-get install gcc yasm unzip -y
 
 # Step 2: Installing Git
 
@@ -79,13 +77,13 @@ This is where it gets very complicated, so make sure you pay **very close** atte
 
 Run the following:
 
-    sudo wget http://downloads.xiph.org/releases/opus/opus-1.1.1.tar.gz
-    sudo tar -xzf opus1.1.1.tar.gz
+    wget http://downloads.xiph.org/releases/opus/opus-1.1.1.tar.gz
+    tar -xzf opus1.1.1.tar.gz
     ./configure --prefix=/usr
 
 Have a quick scroll through the terminal window and look for any errors. If you see something that says `Type "make; make install" to compile and install` near the bottom then you should be good to continue without asking for help on the RhinoBot Discord server ([https://discord.gg/0iqN3da4zqrSz036](https://discord.gg/0iqN3da4zqrSz036)).
 
-    sudo make
+    make
 
 Check for errors once again before proceeding.
 
@@ -107,8 +105,8 @@ Let's get right into it, shall we?
 
 Run the following commands to download RhinoBot:
 
-    sudo wget https://github.com/SexualRhinoceros/MusicBot/archive/develop.zip -O MusicBot-develop.zip
-    sudo unzip MusicBot-develop.zip
+    wget https://github.com/SexualRhinoceros/MusicBot/archive/develop.zip -O MusicBot-develop.zip
+    unzip MusicBot-develop.zip
     cd MusicBot-develop
 
 ### 6.b: Change configuration file
@@ -149,7 +147,7 @@ Go back to the SSH for your server and make sure you're in the `MusicBot-develop
 
 Run this:
 
-    sudo python3 run.py
+    python3 run.py
 
 If you see this:
 
@@ -176,7 +174,7 @@ This creates a `screen` console with the name 'bot' so you can easily come back 
 
 To start the bot in this screen, run:
 
-    sudo python3 run.py
+    python3 run.py
 
 Once that's online and good, hit `Ctrl+A` then click `D` separately to 'detach' from the screen. Your music bot should still be online on your server.
 
