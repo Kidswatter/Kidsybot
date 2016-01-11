@@ -40,5 +40,6 @@
 - `DaysActive`: This is the number of days users should be active to be added in the whitelist automatically.
 - `WhiteListCheck`: Enables / disables the whitelist.
 - `SkipsRequired`: The amount of skips required to skip the song (owners of the bot can override this command).
+- `SkipRatio`: The amount of skips required in percent (0.5 = 50%) to skip the song.
 - `SaveVideos`: Saves all the played songs into the cache.
 - `NowPlayingMentions`: The bot will announce and mention the requestee when a requested song is played.
