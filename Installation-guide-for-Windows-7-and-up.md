@@ -113,3 +113,6 @@ Go back to the main RhinoBot directory and double click `runbot.bat`. If you see
 that means everything is good and running correctly! You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot. :grin:
 
 If you see an error, you might want to try installing dependencies by hand. You can do this by opening a command prompt in the MusicBot folder and executing the command `pip install -r requirements.txt`.
+
+#### NOTE:
+You need to use the `!summon` command to bring the bot into your voice channel now.  There will be an option for the bot to automatically join in a later release.
