@@ -23,3 +23,6 @@ Whatever you did, you did something wrong.  The old version of discord.py (which
 
 #### I'm getting this error! http://i.imgur.com/SkIWWBJ.png
 You have entered the wrong login details in the options file. Open the file and edit it.
+
+#### "Player does not exist. It has not been summoned yet into a voice channel" ?????
+You have to use `!summon`.  An option to auto-summon will be added in a future release.
