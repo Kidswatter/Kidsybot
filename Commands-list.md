@@ -3,7 +3,7 @@
 ### `!summon`
 Calls the bot to your voice channel. 
 
-**Note**: The bot cannot move voice channels yet.  You will have to either drag the bot to a different channel in discord, or restart the bot and summon it to a different channel.
+**Note**: The bot cannot move voice channels by itself yet.  You will have to either drag the bot to a different channel in discord, or restart the bot and summon it to a different channel.
 
 ### `!id`
 This will give you your id.
