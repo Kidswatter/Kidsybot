@@ -124,6 +124,8 @@ Change the configuration settings to what you need according to [this wiki artic
 
 ### 6.c: Start the bot (non permanent for testing)
 
+**If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
+
 Log into the bot's account on your Discord client and join the server you want your bot to live on.
 
 Go back to the SSH for your server and make sure you're in the `MusicBot-develop` folder (you should see `username@host:~/MusicBot-develop$` or something similar in front of the cursor).
