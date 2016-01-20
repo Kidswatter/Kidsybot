@@ -8,13 +8,13 @@ Calls the bot to your voice channel.
 ### `!id`
 This will give you your id.
 
-### `!whitelist @username`
+### `!whitelist [ + | - | add | remove ] @username`
 #### Owner only
-This will add the person 'username' to the whitelist.
+This will add or remove "user" to the whitelist.
 
-### `!blacklist @username`
+### `!blacklist [ + | - | add | remove ] @username`
 #### Owner only
-This will add the person 'username' to the blacklist.
+This will add or remove "user" the the blacklist.
 
 ### `!play <URL>`
 This will play the selected song. (ex: `!play https://www.youtube.com/watch?v=p7ZsBPK656s`)
@@ -37,6 +37,6 @@ This will skip the current song. The owner can skip at any time.
 ### `!shuffle`
 This will shuffle the music queue.
 
-### `!joinserver invite_link`
+### `!joinserver [invite_link]`
 #### Owner only
 Tells the bot to join a server.
