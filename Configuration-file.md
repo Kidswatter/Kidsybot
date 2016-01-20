@@ -19,6 +19,8 @@
     SkipRatio = 0.5
     SaveVideos = yes
     NowPlayingMentions = no
+    AutoSummon = yes
+    UseAutoPlaylist = yes
 
 ## Explanations for each setting
 
@@ -42,4 +44,6 @@
 - `SkipsRequired`: The amount of skips required to skip the song (owners of the bot can override this command).
 - `SkipRatio`: The amount of skips required in percent (0.5 = 50%) to skip the song.
 - `SaveVideos`: Saves all the played songs into the cache.
-- `NowPlayingMentions`: The bot will announce and mention the requestee when a requested song is played.
+- `NowPlayingMentions`: The bot will announce and mention the requester when a requested song is played.
+- `AutoSummon`: On start up, if the owner is in a voice channel, join that channel.
+- `UseAutoPlaylist`: Play a random songs when nothing is en-queued.
