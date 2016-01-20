@@ -10,11 +10,11 @@ This will give you your id.
 
 ### `!whitelist [ + | - | add | remove ] @username`
 #### Owner only
-This will add or remove "user" to the whitelist.
+This will add or remove "user" to the whitelist. (ex: `!whitelist remove @Tomathan`)
 
 ### `!blacklist [ + | - | add | remove ] @username`
 #### Owner only
-This will add or remove "user" the the blacklist.
+This will add or remove "user" the the blacklist. (ex `!blacklist remove @Tomathan`)
 
 ### `!play <URL>`
 This will play the selected song. (ex: `!play https://www.youtube.com/watch?v=p7ZsBPK656s`)
