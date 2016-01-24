@@ -37,6 +37,9 @@ This will skip the current song. The owner can skip at any time.
 ### `!shuffle`
 This will shuffle the music queue.
 
+### `!clear`
+This will clear the current queue.
+
 ### `!joinserver [invite_link]`
 #### Owner only
 Tells the bot to join a server.
