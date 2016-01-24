@@ -132,7 +132,7 @@ Go back to the SSH for your server and make sure you're in the `MusicBot-develop
 
 Run this:
 
-    python3 run.py
+    python3.5 run.py
 
 If you see this:
 
@@ -145,7 +145,7 @@ If you see this:
 
 that means everything is good and running correctly!
 
-If you see an error, you might want to try installing dependencies by hand. You can do this by executing the command `pip3 install -r requirements.txt`.
+If you see an error, you might want to try installing dependencies by hand. You can do this by executing the command `pip3.5 install -r requirements.txt`.
 
 ### 6.d: Start the bot (permanent with screen)
 
@@ -159,7 +159,7 @@ This creates a `screen` console with the name 'bot' so you can easily come back 
 
 To start the bot in this screen, run:
 
-    python3 run.py
+    python3.5 run.py
 
 Once that's online and good, hit `Ctrl+A` then click `D` separately to 'detach' from the screen. Your music bot should still be online on your server.
 
