@@ -94,6 +94,7 @@ Change the current volume for all users of the bot. **NOT RECCOMMENDED.** Users 
 ##### Typical output:
 * `[amount]` not included: `@yournamehere, Current volume: <current volume>`
 * `[amount]`: `@yournamehere, updated volume from <old value> to <new value>`
+
 ##### Arguments:
 * `[amount]`: Amount to change volume by/to. Accepts `1 - 100`, `+n` or `-n` where `n` is amount to change volume by.
 
