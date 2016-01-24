@@ -38,6 +38,7 @@ This will skip the current song. The owner can skip at any time.
 This will shuffle the music queue.
 
 ### `!clear`
+#### Owner only
 This will clear the current queue.
 
 ### `!joinserver [invite_link]`
