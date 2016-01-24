@@ -49,6 +49,7 @@ Add a song to the queue!
 ##### Typical output:
 * For standalone songs: `@yournamehere, Enqueued <song title> to be played. Position in queue: <position in queue> - estimated time until playing: <ETA>`
 * For YouTube playlists: `Gathering playlist information for <song count> songs.` + default output for standalone songs for first song (after fetching playlist is complete)
+
 ##### Arguments:
 * `[url]`: URL to play. This can be from a wide variety of sites, many sites supported by `youtube_dl` are supported by RhinoBot. [youtube_dl supported songs list](https://rg3.github.io/youtube-dl/supportedsites.html). Will output help if omitted.
 
