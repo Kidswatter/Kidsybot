@@ -87,9 +87,9 @@ Let's get right into it, shall we?
 ### 6.a: Download RhinoBot
 
 Run the following commands to download RhinoBot:
-
-    wget https://github.com/SexualRhinoceros/MusicBot/archive/develop.zip -O MusicBot-develop.zip
-    unzip MusicBot-develop.zip
+    
+    mkdir /MusicBot-develop
+    git clone https://github.com/SexualRhinoceros/MusicBot.git /MusicBot-develop
     cd MusicBot-develop
 
 ### 6.b: Change configuration file
