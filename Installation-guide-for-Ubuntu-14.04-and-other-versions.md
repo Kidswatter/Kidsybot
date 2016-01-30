@@ -62,7 +62,7 @@ To install Python 3.5, run the following:
 
     sudo apt-get install python3.5 -y
 
-To install PIP3.5, run the following:
+Python 3.5 should come with pip, but for if some reason you don't have it, run the following:
 
     wget https://bootstrap.pypa.io/get-pip.py
     sudo python3.5 get-pip.py
