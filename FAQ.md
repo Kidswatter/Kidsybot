@@ -26,3 +26,6 @@ You have entered the wrong login details in the options file. Open the file and 
 
 #### "Player does not exist. It has not been summoned yet into a voice channel" ?????
 You have to use `!summon`.  An option to auto-summon will be added in a future release.
+
+#### Can I have the bot play a radio stream?
+If there is no end to the song ie: its a stream of indefinite length, the bot will not work with it
