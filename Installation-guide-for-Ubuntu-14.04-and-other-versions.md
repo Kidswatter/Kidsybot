@@ -62,6 +62,11 @@ To install Python 3.5, run the following:
 
     sudo apt-get install python3.5 -y
 
+To install PIP3.5, run the following:
+
+    wget https://bootstrap.pypa.io/get-pip.py
+    sudo python3.5 get-pip.py
+
 You have now successfully installed Python onto your machine! :)
 
 # Step 4: Installing ffmpeg
