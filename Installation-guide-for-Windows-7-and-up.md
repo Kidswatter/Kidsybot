@@ -116,5 +116,4 @@ that means everything is good and running correctly! You don't need to do anythi
 
 If you see an error, you might want to try installing dependencies by hand. You can do this by opening a command prompt in the MusicBot folder and executing the command `pip install -r requirements.txt`.
 
-#### NOTE:
-You need to use the `!summon` command to bring the bot into your voice channel now.  There will be an option for the bot to automatically join in a later release.
+**NOTE:** The bot will automatically join the owner's voice channel. If the owner isn't in a voice channel, join one and use the command `!summon` to bring the bot into your channel.
