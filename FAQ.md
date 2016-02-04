@@ -15,6 +15,11 @@ The old version of discord.py (which you get by running pip install discord.py) 
 #### I'm getting this error! http://i.imgur.com/SkIWWBJ.png
 You have entered the wrong login details in the options file. Open the file and edit it.
 
+#### When will youtube playlists be supported?
+They *have been* supported.  You have to use the actual playlist url though, not a song from the playlist.
+- Good: `!play https://www.youtube.com/playlist?list=PLC0A615438E62547A`
+- Bad: `!play https://www.youtube.com/watch?v=gbv-yqqmLH0&list=PLC0A615438E62547A`
+
 #### Is/will spotify supported?
 No, and it probably never will be.
 
