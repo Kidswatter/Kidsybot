@@ -2,7 +2,7 @@
 You probably installed python wrong.  See: http://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command
 
 ## I'm getting this error! http://puu.sh/m6hkf/40eec0910c.png
-The bot needs permission to delete messages. An option to toggle this behavior will be added in the future.
+The bot needs permission to delete messages other than its own. An option to toggle this behavior will be added in the future.
 
 ## What is my (Owner)ID?
 Mention yourself, but but a backslash before it, like so: `\@mynamehere`. Alternatively, just type !id in the help server.  The link is in the readme.
