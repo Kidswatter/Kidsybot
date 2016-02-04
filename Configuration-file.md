@@ -3,19 +3,18 @@
 ## Default file
 
     [Credentials]
-    Username = my@email.com
-    Password = rhino_is_a_numpty
+    Username = my@email
+    Password = your_password
     
     [Permissions]
-    OwnerID = 112233445566778899
+    OwnerID = 000000000000000000
     
     [Chat]
     CommandPrefix = !
     
     [MusicBot]
-    DaysActive = 0
     WhiteListCheck = no
-    SkipsRequired = 7
+    SkipsRequired = 4
     SkipRatio = 0.5
     SaveVideos = yes
     NowPlayingMentions = no
@@ -39,11 +38,10 @@
 
 ### `[MusicBot]` section
 
-- `DaysActive`: This is the number of days users should be active to be added in the whitelist automatically.
 - `WhiteListCheck`: Enables / disables the whitelist.
 - `SkipsRequired`: The amount of skips required to skip the song (owners of the bot can override this command).
 - `SkipRatio`: The amount of skips required in percent (0.5 = 50%) to skip the song.
-- `SaveVideos`: Saves all the played songs into the cache.
+- `SaveVideos`: Saves all the played songs into the cache. When disabled, the bot will delete songs after it has played them to save disk space.
 - `NowPlayingMentions`: The bot will announce and mention the requester when a requested song is played.
 - `AutoSummon`: On start up, if the owner is in a voice channel, join that channel.
 - `UseAutoPlaylist`: Play a random songs when nothing is en-queued.
