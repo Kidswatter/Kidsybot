@@ -15,6 +15,9 @@ The old version of discord.py (which you get by running pip install discord.py) 
 #### I'm getting this error! http://i.imgur.com/SkIWWBJ.png
 You have entered the wrong login details in the options file. Open the file and edit it.
 
+#### How do I update the bot?
+Currently, you just download it and change the config again.  Eventually some sort of system will be added to either alert you that there's an update, or do it for you.  The topic in the #musicbothelp channel in the help server is always updated with when the bot has been updated.
+
 #### When will youtube playlists be supported?
 They *have been* supported.  You have to use the actual playlist url though, not a song from the playlist.
 - Good: `!play https://www.youtube.com/playlist?list=PLC0A615438E62547A`
