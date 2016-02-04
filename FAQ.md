@@ -1,12 +1,12 @@
-## 'pip' is not recognized as an internal or external command
-You probably installed python wrong.  See: http://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command
-
 ## What do these errors mean?
 ### http://i.imgur.com/SkIWWBJ.png
 You have entered the wrong login details in the options file. Open the file and edit it *and remember to save*.  Yes, people have forgotten to save.
 
 ### http://puu.sh/m6hkf/40eec0910c.png
 The bot needs permission to delete messages (besides its own). An option to toggle this behavior will be added in the future.
+
+### `'pip' is not recognized as an internal or external command`
+You probably installed python wrong.  See: http://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command
 
 ### `AttributeError: module 'discord' has no attribute 'opus'`
 The old version of discord.py (which you get by running `pip install discord.py`) doesn't support voice; only the async branch does.  You need git to install the async branch, which is why we have you install git.
