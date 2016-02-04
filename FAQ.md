@@ -18,7 +18,7 @@ You have entered the wrong login details in the options file. Open the file and 
 #### Is/will spotify supported?
 No, and it probably never will be.
 
-#### Can I have the bot play a radio stream?
+#### Can I have the bot play a stream?
 No.  The bot downloads the song before playing it, so it won't work with streams of indefinite length.  That means twitch.tv too, since youtube-dl supports that.
 
 #### Is [some other website or service] supported?
