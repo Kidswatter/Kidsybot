@@ -7,7 +7,7 @@ You probably installed python wrong.  See: http://stackoverflow.com/questions/23
 The bot needs permission to delete messages. An option to toggle this behavior will be added in the future.
 
 #### What is my (Owner)ID?
-Type !id in the help server.  The link is in the readme.
+Mention yourself, but but a backslash before it, like so: \@mynamehere. Alternatively, just type !id in the help server.  The link is in the readme.
 
 #### AttributeError: module 'discord' has no attribute 'opus'
 The old version of discord.py (which you get by running pip install discord.py) doesn't support voice; only the async branch does.  You need git to install that one, which is why we have you install git.
