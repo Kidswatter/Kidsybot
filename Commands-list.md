@@ -42,7 +42,7 @@ This command will add or remove the specified user from the blacklist.
 
 ---
 
-### `!play [url]`
+### `!play <url>`
 Add a song to the queue!
 
 ##### Permissions: Everyone
@@ -51,7 +51,7 @@ Add a song to the queue!
 * For YouTube playlists: `Gathering playlist information for <song count> songs.` + default output for standalone songs for first song (after fetching playlist is complete)
 
 ##### Arguments:
-* `[url]`: URL to play. This can be from a wide variety of sites, many sites supported by `youtube_dl` are supported by RhinoBot. [youtube_dl supported songs list](https://rg3.github.io/youtube-dl/supportedsites.html). Will output help if omitted.
+* `<url>`: URL to play. This can be from a wide variety of sites, many sites supported by `youtube_dl` are supported by RhinoBot. [youtube_dl supported songs list](https://rg3.github.io/youtube-dl/supportedsites.html). Will output help if omitted.
 
 ---
 
