@@ -1,4 +1,4 @@
-**THIS GUIDE IS FOR INSTALLING THE `develop` BRANCH ONTO A WINDOWS 7 AND UP MACHINE.** If you are not using Windows 7 or up, please use another article to install your RhinoBot.
+**THIS GUIDE IS FOR INSTALLING THE `develop` BRANCH ONTO A WINDOWS 7 AND UP MACHINE.** If you are not using Windows 7 or up, please use another article to install your MusicBot.
 
 # Table of Contents
 
@@ -8,8 +8,8 @@
 2. [Step 2: Installing Python](#step-2-installing-python-351)
     - [2.a Download Python installer](#2a-downloading-python-installer)
     - [2.b: Install Python](#2b-install-python-351)
-3. [Step 3: Install and configure RhinoBot](#step-3-install-and-configure-rhinobot)
-    - [3.a: Download RhinoBot](#3a-download-rhinobot)
+3. [Step 3: Install and configure MusicBot](#step-3-install-and-configure-musicbot)
+    - [3.a: Download MusicBot](#3a-download-musicbot)
     - [3.b: Change configuration file](#3b-change-configuration-file)
     - [3.c: Start the bot!](#3c-start-the-bot)
 
@@ -77,13 +77,13 @@ Once that is done, click the button labeled *Close* to finish installation.
 
 You have now successfully installed Python onto your machine! :smile:
 
-# Step 3: Install and configure RhinoBot
+# Step 3: Install and configure MusicBot
 
 Let's get right into it, shall we?
 
-### 3.a: Download RhinoBot
+### 3.a: Download MusicBot
 
-You can download the `develop` branch version of RhinoBot [here](https://github.com/SexualRhinoceros/MusicBot/archive/develop.zip "Download RhinoBot develop branch"). Once that is done, extract the .zip file into a convenient location (I suggest the Desktop).
+You can download the `develop` branch version of MusicBot [here](https://github.com/SexualRhinoceros/MusicBot/archive/develop.zip "Download MusicBot develop branch"). Once that is done, extract the .zip file into a convenient location (I suggest the Desktop).
 
 ![Extracting .zip file](http://i.imgur.com/PDTvnEu.png)
 
@@ -91,7 +91,7 @@ You can download the `develop` branch version of RhinoBot [here](https://github.
 
 When the extraction finishes, a new window should appear with the following contents:
 
-![RhinoBot contents](http://i.imgur.com/Tm0NEoW.png)
+![MusicBot contents](http://i.imgur.com/Tm0NEoW.png)
 
 Double click on the `config` folder to open it and then open `options.txt` in a text editor OTHER than Notepad, otherwise you'll see one big line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").
 
@@ -103,7 +103,7 @@ Change the configuration settings to what you need according to [this wiki artic
 
 Log into the bot's account on your Discord client and join the server you want your bot to live on.
 
-Go back to the main RhinoBot directory and double click `runbot.bat`. If you see:
+Go back to the main MusicBot directory and double click `runbot.bat`. If you see:
 
     Connected!
     
