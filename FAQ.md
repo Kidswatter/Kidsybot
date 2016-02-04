@@ -3,7 +3,7 @@ You probably installed python wrong.  See: http://stackoverflow.com/questions/23
 
 ## What do these errors mean?
 ### http://i.imgur.com/SkIWWBJ.png
-You have entered the wrong login details in the options file. Open the file and edit it.
+You have entered the wrong login details in the options file. Open the file and edit it *and remember to save*.  Yes, people have forgotten to save.
 
 ### http://puu.sh/m6hkf/40eec0910c.png
 The bot needs permission to delete messages other than its own. An option to toggle this behavior will be added in the future.
