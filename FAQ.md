@@ -7,7 +7,7 @@ The bot needs permission to delete messages other than its own. An option to tog
 ## What is my (Owner)ID?
 Mention yourself, but but a backslash before it, like so: `\@mynamehere`. Alternatively, just type !id in the help server.  The link is in the readme.
 
-## `AttributeError: module 'discord' has no attribute 'opus'`
+##`AttributeError: module 'discord' has no attribute 'opus'` ?
 The old version of discord.py (which you get by running `pip install discord.py`) doesn't support voice; only the async branch does.  You need git to install the async branch, which is why we have you install git.
 
 ## I'm getting this error! http://i.imgur.com/SkIWWBJ.png
