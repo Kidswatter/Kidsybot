@@ -92,9 +92,9 @@ Let's get right into it, shall we?
 
 Run the following commands to download RhinoBot:
 
-    mkdir /MusicBot-develop
-    git clone https://github.com/SexualRhinoceros/MusicBot.git /MusicBot-develop
-    cd MusicBot-develop
+    mkdir ~/MusicBot-develop
+    git clone https://github.com/SexualRhinoceros/MusicBot.git ~/MusicBot-develop
+    cd ~/MusicBot-develop
 
 ### 6.b: Change configuration file
 
