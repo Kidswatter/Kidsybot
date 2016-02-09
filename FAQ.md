@@ -22,7 +22,7 @@ They *have been* supported.  You need to use the actual playlist url though, not
 - Good: `!play https://www.youtube.com/playlist?list=PLC0A615438E62547A`
 - Bad: `!play https://www.youtube.com/watch?v=gbv-yqqmLH0&list=PLC0A615438E62547A`
 
-## Is/will spotify supported?
+## Is/will spotify be supported?
 No, and it probably never will be.
 
 ## Can I have the bot play a stream?
