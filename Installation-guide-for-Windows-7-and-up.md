@@ -103,6 +103,8 @@ Change the configuration settings to what you need according to [this wiki artic
 
 Log into the bot's account on your Discord client and join the server you want your bot to live on.
 
+Log out of the bot's account on Discord.
+
 Go back to the main MusicBot directory and double click `runbot.bat`. If you see:
 
     Connected!
