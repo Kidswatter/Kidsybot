@@ -101,9 +101,7 @@ Change the configuration settings to what you need according to [this wiki artic
 
 **If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
 
-Log into the bot's account on your Discord client and join the server you want your bot to live on.
-
-Log out of the bot's account on Discord.
+Log into the bot's account on your Discord client and join the server you want your bot to live on. Then, log out of the bot's account on your Discord client.
 
 Go back to the main MusicBot directory and double click `runbot.bat`. If you see:
 
