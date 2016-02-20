@@ -98,7 +98,7 @@ Run the following commands to download RhinoBot:
 
 ### 6.b: Change configuration file
 
-A fairly easy way to edit the configuration is with SFTP software, such as CyberDuck or WinSCP or Filezilla. Filezilla works on Linux, Windows, and Mac computers, CyberDuck works with Windows and Mac computers, and WinSCP only works with Windows computers. Due to _reasons_, this tutorial will explain how to use CyberDuck to access your server's files (sorry Linux users...).
+A fairly easy way to edit the configuration is with SFTP software, such as CyberDuck or WinSCP or Filezilla. Filezilla works on Linux, Windows, and Mac computers, CyberDuck works with Windows and Mac computers, and WinSCP only works with Windows computers. Linux users can also generally use the file manager built into their distro - try looking in the file menu for a 'Connect to server' option. For the purposes of this tutorial, we will explain how to use CyberDuck to access your server's files, but a quick Google should help you understand how to use other tools similarly.
 
 **NOTE:** CyberDuck **is** free software, but you will be prompted for donations each time you use it. If you donate, you will receive a license key which will remove the donation prompt.
 
@@ -124,7 +124,7 @@ Now you require a text editor other than notepad, as notepad won't work for this
 
 ![CyberDuck open options.txt](http://i.imgur.com/GthqaYC.png)
 
-Change the configuration settings to what you need according to [this wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/%5Bdevelop%5D-Configuration-file "develop branch configuration file"). To save to the server, just save the file in the editor where it is. It should automatically upload.
+Change the configuration settings to what you need according to [this wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration-file "develop branch configuration file"). To save to the server, just save the file in the editor where it is. It should automatically upload.
 
 ### 6.c: Start the bot (non permanent for testing)
 
@@ -175,4 +175,4 @@ If you ever want to have a look at the bot's console logs, SSH back into the mac
 
 That should bring everything back up.
 
-You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/%5Bdevelop%5D-Commands-list "Commands list") to find out how to use your bot. :grin:
+You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot. :grin:
