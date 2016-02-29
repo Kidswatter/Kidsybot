@@ -1,4 +1,4 @@
-Interacting with MusicBot is done via chat commands.  The bot does not take commands via DMs, with the exceptions of the `joinserver` command from the owner of the bot.  The owner may have changed the bot's command prefix from the default `!` to something else, as to not interfere with another bot that uses `!` for commands.  Most messages are deleted after some time, as not to fill up the chat with stale information.
+Interacting with MusicBot is done via chat commands.  The bot does not take commands via DMs, with the exception of the `joinserver` command from the owner of the bot.  The owner may have changed the bot's command prefix from the default `!` to something else, as to not interfere with another bot that uses `!` for commands.  Most messages are deleted after some time, as not to fill up the chat with stale information.
 
 ## Command format
 ### `!command [optional argument] [multiple | choice | argument] <required argument>`
