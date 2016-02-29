@@ -6,4 +6,4 @@ Here you will find detailed guides on how to install and use MusicBot on your co
 
 ### I need help!
 
-Our community has a Discord server filled with helpful people who can help you if you get stuck on one of these guides. You can join the server with this invite: ["Rhino Help Discord Server"](http://discord.me/rhinohelp).
+Our community has a Discord server filled with helpful people who can help you if you get stuck on one of these guides. You can join the server with this invite: ["Rhino Help Server"](http://discord.me/rhinohelp).
