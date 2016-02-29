@@ -45,13 +45,7 @@ First of all, we'll add the repositories needed to install prerequisites for Rhi
 
 # Step 2: Installing Git
 
-First of all, we need to install Git. If you already have Git installed onto your machine, you can skip to Step 3.
-
-To install Git, run the following:
-
-    sudo apt-get install git -y
-
-You have now successfully installed Git onto your machine! :)
+Skip this step, installing git is not necessary, and updating the wiki properly takes effort.
 
 # Step 3: Installing Python 3.5
 
