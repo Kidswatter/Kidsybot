@@ -1,133 +1,155 @@
-# MusicBot's commands
+Interacting with MusicBot is done via chat commands.  The bot does not take commands via DMs, with the exceptions of the `joinserver` command from the owner of the bot.  The owner may have changed the bot's command prefix from the default `!` to something else, as to not interfere with another bot that uses `!` for commands.  Most messages are deleted after some time, as not to fill up the chat with stale information.
 
-### `!summon`
-Summon the music bot into your current voice channel. The bot should auto-summon itself into the owner's current voice channel when joining if the owner is in a voice channel.
+## Command format
+### `!command [optional argument] [multiple | choice | argument] <required argument>`
+Basic description of what the command does.  Additional information may be provided.
 
-**Note**: MusicBot cannot move voice channels by itself yet.  You will have to either drag MusicBot to a different voice channel in Discord, or restart MusicBot and summon it to a different channel.
+If a command has a second set of usage text, that means there's another way to use the command.
 
-##### Permissions: Owner only
-##### Typical output: None
+When using arguments, **do not include the brackets** (**[ ]** or **< >**).  These are for indicating the type of argument.  If an argument starts with an `@`, i.e. **`[@user]`**, this indicates that the argument should be a user mention, not just the name of the user.  Discord names are not unique, any user can change their name to anything at any time, including the name of other users.
 
----
+**Note**: Possible exception or caveat that the user should take note of when using the command.  For example: `!command` is not a real command, just a place holder to demonstrate the command format.
 
-### `!id`
-This will print out your Discord user ID into the chat. This command cannot print IDs for other users.
+## Commands
 
-##### Permissions: Everyone
-##### Typical output: `@yournamehere, your id is <ID>`
-
----
-
-### `!whitelist <status> <user>`
-This command will add or remove the specified user from the whitelist.
-
-##### Permissions: Owner only
-##### Typical output: None
-##### Arguments:
-* `<status>`: Status to set the user as in the whitelist. Accepts `+`, `-`, `add` or `remove`.
-* `<user>`: User to add or remove from the whitelist as an @mention.
-
----
-
-### `!blacklist <status> <user>`
-This command will add or remove the specified user from the blacklist.
-
-##### Permissions: Owner only
-##### Typical output: None
-##### Arguments:
-* `<status>`: Status to set the user as in the backlist. Accepts `+`, `-`, `add` or `remove`.
-* `<user>`: User to add or remove from the blacklist as an @mention.
-
----
-
-### `!play <url>`
-Add a song to the queue!
-
-##### Permissions: Everyone
-##### Typical output:
-* For standalone songs: `@yournamehere, Enqueued <song title> to be played. Position in queue: <position in queue> - estimated time until playing: <ETA>`
-* For YouTube playlists: `Gathering playlist information for <song count> songs.` + default output for standalone songs for first song (after fetching playlist is complete)
+### `!play <song link>`
+### `!play <song text to search for>`
+Add a song to the queue, or add the first youtube result for the provided search text.
 
 ##### Arguments:
-* `<url>`: URL to play. This can be from a wide variety of sites, many sites supported by `youtube_dl` are supported by MusicBot. [youtube_dl supported songs list](https://rg3.github.io/youtube-dl/supportedsites.html). Will output help if omitted.
-
----
-
-### `!pause`
-Pause the bot.
-
-##### Permissions: Everyone
-##### Typical output: None
-
----
-
-### `!resume`
-Undo `!pause` and resume playback.
-
-##### Permissions: Everyone
-##### Typical output: None
+- `<song link>` A link to some song.  **Links are not limited to youtube**, see [this FAQ entry](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#is-some-other-website-or-service-supported).
+  - Example: `!play https://www.youtube.com/watch?v=gbv-yqqmLH0`
+- *or...*
+- `<song text to search for>` Some search query you want the bot to look up on youtube.
+  - Example: `!play I ran seagulls` will play *I Ran* by *A Flock of Seagulls*.
 
 ---
 
 ### `!queue`
-Output the current queue of songs.
-
-##### Permissions: Everyone
-##### Typical output:
-```
-Now Playing: <song title> added by <user who added song> [<current song play times>]
-
-1. <song title> added by <user who added song>
-```
+Prints the bot's current queue in chat.
 
 ---
 
-### `!volume [amount]`
-Change the current volume for all users of the bot. **NOT RECCOMMENDED.** Users can adjust MusicBot's volume for themselves.
-
-##### Permissions: Everyone
-##### Typical output:
-* `[amount]` not included: `@yournamehere, Current volume: <current volume>`
-* `[amount]`: `@yournamehere, updated volume from <old value> to <new value>`
-
-##### Arguments:
-* `[amount]`: Amount to change volume by/to. Accepts `1 - 100`, `+n` or `-n` where `n` is amount to change volume by.
+### `!np`
+Prints the currently playing song in the chat.
 
 ---
 
 ### `!skip`
-Vote to skip the current song. When owners use this, it instantly skips the song.
+Vote to skip the current song, or if you're the owner, skip the current song.
 
-##### Permissions: Everyone (Owner only override)
-##### Typical output:
-```
-@yourname, your skip for <song name here> was acknowledged.
-<amount of votes left> more people are required to vote to skip this song.
-```
+Skip settings may vary, but the two conditions are either a static number of votes required, or a percent of undefeaned users in voice chat.  These values are set by the owner, and the bot will announce how many votes are required to skip when the command is used.  As previously stated, the owner can skip at any time.
+
+---
+
+### `!search [service] [number] <query>`
+Interactively search for a video to add to the queue.  The bot will look up `number` videos and prompts the user to accept or deny each video.  This command times out after 30 seconds, and has a hard limit of 10 max search items.
+
+---
+
+##### Arguments:
+- `[service]` Optionally specify a service to search for videos on.  The default is youtube, but it can be any of the following (the short ones are abbreviations):
+  - `youtube`, `soundcloud`, `yahoo`, or `yt`, `sc`, `yh` if you don't want to type the whole thing.
+- `[number]` Optionally specify a number of video results to prompt.  The default is 1 and is limited to 10, althought this may be increased in the future.
 
 ---
 
 ### `!shuffle`
-Shuffle the queue.
-
-##### Permissions: Everyone
-##### Typical output: `*shuffleshuffleshuffle*`
-##### Arguments: None
+Shuffles the queue.
 
 ---
 
 ### `!clear`
-Empty the queue.
-
-##### Permissions: Owner only
-##### Typical output: None
+Clears the queue.
 
 ---
 
-### `!joinserver <Discord join URL>`
-Instructs the bot to join a server
+### `!pause`
+Pauses the playback of the current song.
 
-##### Permissions: Owner only
-##### Typical output: None
+---
+
+### `!resume`
+Resumes playback of a paused song.
+
+---
+
+### `!volume [amount]`
+Changes the volume of the current song, or prints the current volume if an `amount` is not specified.  This affects all users.
+
 ##### Arguments:
-* `<Discord join URL>`: Server join URL for the bot to join.
+- `[amount]` If specified, set the volume to the given level (a number between `1` and `100`), or a relative amount to the current level (`+5` or `-10`, etc).
+
+---
+
+### `!summon`
+Call the bot to your voice channel.  Obviously, you must be in a voice channel to use this command.
+
+The bot can move between voice channels on a server (that it has permission to join), but not across servers.  If the bot lacks permissions to join, either grant the bot permission or just drag the bot into the channel.
+
+**Note:** Typically, you don't need to use this command if you enable the `AutoSummon` option.  That makes the bot attempt to join the owner's voice channel on startup.
+
+---
+
+### `!clean <amount>`
+Search through `amount` of messages and remove any sent by the bot.  If the bot has **Manage Messages** permission in the channel, the bot will also remove message that invoked bot commands (messages that were commands for the bot, `!play`, `!np`, etc).
+
+**Note:** `amount` is not how many messages to remove, it's how many messages to *search through* to remove.
+
+##### Arguments:
+- `<amount>` Number of messages to search through to remove the bots own messages (and messages invoking the bot if the bot has **Manage Messages** permissions).
+
+---
+
+### `!blacklist <status> <@user>`
+Add or remove a user from the bot blacklist.  Blacklisted users cannot use any bot commands.  This overrides any permissions settings set in `permissions.ini`.  The owner cannot be blacklisted.  Listing multiple users is not supported, but may be in a future update.
+
+**Note:** Remember to @mention the user when using this command.
+
+##### Arguments:
+- `<status>` Whether to add or remove a user.  Accepted values are `+`, `-`, `add`, and `remove`.
+- `<@user>` Target user.  Must be a mention.
+
+---
+
+### `!whitelist <status> <@user>`
+Add or remove a user from the bot whitelist.  Similar to the blacklist option, however the whitelist must be enabled for this to have any effect.  Permissions settings in `permissions.ini` **do not** override this.
+
+**Note:** Remember to @mention the user when using this command, and to enable the `WhiteListCheck` option in `options.ini` for this command to have any effect.
+
+##### Arguments:
+- `<status>` Whether to add or remove a user.  Accepted values are `+`, `-`, `add`, and `remove`.
+- `<@user>` Target user.  Must be a mention.
+
+---
+
+### `!help`
+Prints a basic list of commands.  This command is more or less a place holder until a nice, dynamic command is created.  At least it links to this nicely documented page though.
+
+---
+
+### `!id [@user]`
+Prints the user's id in chat, or prints the id of the specified user.
+
+##### Arguments:
+- `[@user]` Optionally specify to print another user's id.  Must be a mention.
+
+---
+
+### `!listroles`
+DMs the user a list of roles and ids on the server.  This command is used to assist in setting up permissions, specifically the `GrantToRole` option.
+
+---
+
+### `!perms`
+DMs the user their permissions on the server.  Helpful for figuring out what they can and can't do *without spamming every command to see if it works*.
+
+---
+
+### `!joinserver <server invite link>`
+Asks the bot to join a server.  This is the one command that can be invoked by DMing the bot.
+
+**Note:** Only the owner can use this command.  This cannot be changed through permissions.
+
+##### Arguments:
+- `<server invite link>` An invite link for a server, usually looks something like `http://discord.gg/somerandomtexthere`.
