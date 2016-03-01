@@ -40,7 +40,7 @@ You have now successfully installed Python onto your machine! :smile:
 
 ### 2.a: Download MusicBot
 
-You can download the `develop` branch version of MusicBot [here](https://github.com/SexualRhinoceros/MusicBot/archive/develop.zip "Download MusicBot develop branch"). Once that is done, extract the .zip file into a convenient location (your Desktop, for example).
+You can download the latest beta build of the `develop` branch version of MusicBot [here](https://github.com/SexualRhinoceros/MusicBot/releases/tag/v1.9.5rc5 "Download MusicBot develop branch"). Once that is done, extract the .zip file into a convenient location (your Desktop, for example).
 
 ![Extracting .zip file](http://i.imgur.com/PDTvnEu.png)
 
