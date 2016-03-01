@@ -50,7 +50,7 @@ When the extraction finishes, a new window should appear with the following cont
 
 ![MusicBot contents](http://i.imgur.com/Tm0NEoW.png)
 
-Double click on the `config` folder to open it and then open `options.txt` in a text editor OTHER than Notepad, otherwise you'll see a single line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").
+Double click on the `config` folder to open it and then open `options.ini` in a text editor OTHER than Notepad, otherwise you'll see a single line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").
 
 Configure the file however you want, it should explain everything you need.  If you have any further questions, you can ask on the help server (link below).
 
