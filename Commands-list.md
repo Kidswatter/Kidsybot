@@ -45,8 +45,6 @@ Skip settings may vary, but the two conditions are either a static number of vot
 ### `!search [service] [number] <query>`
 Interactively search for a video to add to the queue.  The bot will look up `number` videos and prompts the user to accept or deny each video.  This command times out after 30 seconds, and has a hard limit of 10 max search items.
 
----
-
 ##### Arguments:
 - `[service]` Optionally specify a service to search for videos on.  The default is youtube, but it can be any of the following (the short ones are abbreviations):
   - `youtube`, `soundcloud`, `yahoo`, or `yt`, `sc`, `yh` if you don't want to type the whole thing.
