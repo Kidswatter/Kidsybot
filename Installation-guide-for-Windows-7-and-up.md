@@ -50,7 +50,7 @@ When the extraction finishes, a new window should appear with the following cont
 
 ![MusicBot contents](http://i.imgur.com/Tm0NEoW.png)
 
-Double click on the `config` folder to open it and then open `options.ini` in a text editor OTHER than Notepad, otherwise you'll see a single line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").
+In the `config` folder, if there isn't a file called `options.ini`, copy `example_options.ini` and rename the copy to `options.ini`.  Then, open `options.ini` in a text editor OTHER than Windows Notepad, otherwise you'll see a single line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").  Editing the options file with windows notepad will mangle the content and the bot won't be able to read it.
 
 Configure the file however you want, it should explain everything you need.  If you have any further questions, you can ask on the help server (link below).
 
