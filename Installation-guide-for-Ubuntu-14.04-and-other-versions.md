@@ -159,7 +159,7 @@ To start the bot in this screen, run:
 
     python3.5 run.py
 
-Once that's online and good, hit `Ctrl+A` then click `D` separately to 'detach' from the screen. Your music bot should still be online on your server.
+Once that's online and good, press `Ctrl+a` then `d` separately to 'detach' from the screen. Your music bot should still be online on your server.
 
 Now you can close your SSH window or terminal and play with your bot!
 
