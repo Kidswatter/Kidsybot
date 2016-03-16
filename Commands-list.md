@@ -16,6 +16,7 @@ When using arguments, **do not include the brackets** (**[ ]** or **< >**).  The
 ### `!play <song text to search for>`
 Add a song to the queue, or add the first youtube result for the provided search text.
 
+**Note**: In the `develop` version of the bot, to search for a song, you use `!play ytsearch:my_search_query`
 ##### Arguments:
 - `<song link>` A link to some song.  **Links are not limited to youtube**, see [this FAQ entry](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#is-some-other-website-or-service-supported).
   - Example: `!play https://www.youtube.com/watch?v=gbv-yqqmLH0`
