@@ -17,8 +17,8 @@ Mention yourself, but but a backslash before it, like so: `\@mynamehere`. Altern
 ## How do I update the bot?
 Currently, you just download it and change the config again.  Eventually some sort of system will be added to either alert you that there's an update, or do it for you.  The topic in the #musicbothelp channel in the help server is always updated with when the bot has been updated.
 
-## When will youtube playlists be supported?
-They *have been* supported.  You need to use the actual playlist url though, not a song from the playlist.
+## How do I play a youtube playlist?
+Just use the playlist link.  You need to use the actual playlist url though, not a song from the playlist.
 - Good: `!play https://www.youtube.com/playlist?list=PLC0A615438E62547A`
 - Bad: `!play https://www.youtube.com/watch?v=gbv-yqqmLH0&list=PLC0A615438E62547A`
 
