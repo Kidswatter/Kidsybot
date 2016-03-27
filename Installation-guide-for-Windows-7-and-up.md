@@ -1,5 +1,3 @@
-**THIS GUIDE IS FOR INSTALLING THE `develop` BRANCH ONTO A WINDOWS 7 AND UP MACHINE.** If you are not using Windows 7 or up, please use another article to install your MusicBot.
-
 # Table of Contents
 
 2. [Step 1: Installing Python](#step-1-installing-python-351)
