@@ -2,11 +2,11 @@
 
 # Table of Contents
 
-- [Introduction](introduction)
-- [Installation](installation)
-  - [Step 1: Preperation](step-1-preperation)
-  - [Step 2: Installation](step-2-installation)
-  - [Step 3: Configuration](step-3-configuration)
+- [Introduction](#introduction)
+- [Installation](#installation)
+  - [Step 1: Preperation](#step-1-preperation)
+  - [Step 2: Installation](#step-2-installation)
+  - [Step 3: Configuration](#step-3-configuration)
 
 # Introduction
 
