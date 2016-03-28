@@ -24,7 +24,7 @@ Simply call `docker pull sidesplitter/musicbot:review` to pull the latest image 
 
 ## Step 3: Configuration
 
-Get the [default configuration](https://raw.githubusercontent.com/SexualRhinoceros/MusicBot/review/config/example_options.ini) and save it somewhere.After editing it you can copy it to your docker container by using the following command: `docker cp [Path to options.ini] musicbot:/musicBot/config/options.ini`. Restart your docker container by typing `docker restart musicbot`. Everything should now run smoothly.
+Get the [default configuration](https://raw.githubusercontent.com/SexualRhinoceros/MusicBot/review/config/example_options.ini) and save it somewhere. After editing it you can copy it to your docker container by using the following command: `docker cp [Path to options.ini] musicbot:/musicBot/config/options.ini`. Restart your docker container by typing `docker restart musicbot`. Everything should now run smoothly.
 
 ***
 
