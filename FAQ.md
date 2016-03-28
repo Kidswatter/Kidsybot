@@ -1,8 +1,11 @@
 ## What do these errors mean?
-### http://i.imgur.com/SkIWWBJ.png
+
+![](http://i.imgur.com/SkIWWBJ.png)
+
 You have entered the wrong login details in the options file. Open the file and edit it *and remember to save*.  Yes, people have forgotten to save.
 
-### http://puu.sh/m6hkf/40eec0910c.png
+![](http://puu.sh/m6hkf/40eec0910c.png)
+
 The bot needs permission to delete messages (besides its own). An option to toggle this behavior will be added in the future.
 
 ### `'pip' is not recognized as an internal or external command`
@@ -30,3 +33,11 @@ No.  The bot downloads the song before playing it, so it won't work with streams
 
 ## Is [some other website or service] supported?
 The bot uses [youtube-dl](https://github.com/rg3/youtube-dl) to handle getting information on whatever links you throw at it.  It supports over 600 sites, so the answer is probably yes, except for streams, but you already know that.  See: [youtube-dl supported sites](https://rg3.github.io/youtube-dl/supportedsites.html "Yes, it supports various porn sites, but you probably don't want to be banned from whatever server you try it on.")
+
+## Can the bot be in multiple voice channels?
+
+Not currently. Soon :tm:.
+
+## `[s16le @ 0x2c50f80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2216 >= 2191`
+
+Not a problem, this is just ffmpeg complaining about bad audio files. This wont affect you or your bot at all. I promise.
