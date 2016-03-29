@@ -36,8 +36,8 @@ The bot uses [youtube-dl](https://github.com/rg3/youtube-dl) to handle getting i
 
 ## Can the bot be in multiple voice channels?
 
-Not currently. Soon :tm:.
+Not currently. Soon :tm:.  This requires `Bot` accounts, which aren't finished yet.
 
 ## `[s16le @ 0x2c50f80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2216 >= 2191`
 
-Not a problem, this is just ffmpeg complaining about bad audio files. This wont affect you or your bot at all. I promise.
+This isn't an error, just ffmpeg complaining about something in the audio data.  You can ignore this.
