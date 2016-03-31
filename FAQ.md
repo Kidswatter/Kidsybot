@@ -14,6 +14,11 @@ You probably installed python wrong.  See: http://stackoverflow.com/questions/23
 ### `AttributeError: module 'discord' has no attribute 'opus'`
 The old version of discord.py (which you get by running `pip install discord.py`) doesn't support voice; only the async branch does.  You need git to install the async branch, which is why we have you install git.
 
+### Wtf is this?
+##### `[s16le @ 0x2c50f80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2216 >= 2191`
+
+This isn't an error, just ffmpeg complaining about something in the audio data.  You can ignore this.
+
 ## What is my (Owner)ID?
 Mention yourself, but but a backslash before it, like so: `\@mynamehere`. Alternatively, just type !id in the help server.  The link is in the readme.
 
@@ -38,6 +43,3 @@ The bot uses [youtube-dl](https://github.com/rg3/youtube-dl) to handle getting i
 
 Not currently. Soon :tm:.  This requires `Bot` accounts, which aren't finished yet.
 
-## `[s16le @ 0x2c50f80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2216 >= 2191`
-
-This isn't an error, just ffmpeg complaining about something in the audio data.  You can ignore this.
