@@ -16,7 +16,7 @@ Docker is a way to virtualize the Musicbot. By using Docker you do not have to w
 
 ## Step 1: Preparation
 
-The only requirement is that you have [Docker](https://docs.docker.com/mac/) installed. You do not require anything else
+The only requirement is that you have [Docker](https://docs.docker.com/mac/) installed. You do not require anything else. You do not need to build the image yourself as it is available on [Docker Hub](https://hub.docker.com/r/sidesplitter/musicbot/)!
 
 ## Step 2: Installation
 
