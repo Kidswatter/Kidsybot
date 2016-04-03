@@ -53,7 +53,7 @@ Now we have Git installed on this machine, we need to install Python.
 
 To install Python 3.5, run the following:
 
-    sudo apt-get install python3.5 -y
+    sudo apt-get install python3.5 python3.5-dev -y
 
 Python 3.5 should come with pip, but for if some reason you don't have it, run the following:
 
