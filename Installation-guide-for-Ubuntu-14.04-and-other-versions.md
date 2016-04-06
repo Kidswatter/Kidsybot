@@ -63,7 +63,7 @@ Run the following commands to download MusicBot:
 
     git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot
     cd MusicBot
-    git checkout v1.9.7rc7
+    git checkout v1.9.5rc7
 
 ### 2.a: Install python dependencies
 
