@@ -8,11 +8,12 @@
     - [1.a: Setup Ubuntu](#1a-setup-ubuntu)
     - [1.b: Updating package lists and adding repositories](#1b-updating-package-lists-and-adding-repositories)
     - [1.c: Installing dependencies](#1c-installing-dependencies)
-3. [Step 2: Download and setup MusicBot](#2-download-and-setup-musicbot)
+2. [Step 2: Download and setup MusicBot](#2-download-and-setup-musicbot)
     - [2.a: Install python dependencies](#2a-install-python-dependencies)
     - [2.b: Change configuration file](#2b-change-configuration-file)
-    - [2.c: Start the bot (non permanent for testing)](#2c-start-the-bot-non-permanent-for-testing)
-    - [2.d: Start the bot (permanent with screen)](#2d-start-the-bot-permanent-with-screen)
+3. [Step 3: Start the bot](#3-start-the-bot)
+    - [3.a: Test the bot (non permanent)](#3a-test-the-bot-non-permanent)
+    - [3.b: Start the bot (permanent with screen)](#3b-start-the-bot-permanent-with-screen)
 
 # Introduction
 
@@ -101,12 +102,13 @@ Now you require a text editor other than notepad, as notepad won't work for this
 
 Read through the various comments in the file and set options as you please. To save to the server, just save the file in the editor where it is. It should automatically upload.
 
-### 2.c: Start the bot (non permanent for testing)
+## 3: Start the bot 
 
 **If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
 
 Log into the bot's account on your Discord client and join the server you want your bot to live on. Then, log out of the bot's account on your Discord client.
 
+### 3.a Test the bot (non permanent)
 Go back to the SSH for your server and make sure you're in the `MusicBot` folder (you should see `username@host:~/MusicBot$` or something similar in front of the cursor).
 
 Run this:
@@ -124,7 +126,7 @@ If you see this:
 
 that means everything is good and running correctly!
 
-### 2.d: Start the bot (permanent with screen)
+### 3.b: Start the bot (permanent with screen)
 
 Close the test bot first by hitting `Ctrl+C` in the SSH window while the bot is running.  You may need to press it a few times.
 
