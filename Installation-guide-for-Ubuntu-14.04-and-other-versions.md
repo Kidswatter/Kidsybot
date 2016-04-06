@@ -50,6 +50,7 @@ These are the things we need to run the bot.
     sudo apt-get install ffmpeg -y
     sudo apt-get install libopus-dev -y
     sudo apt-get install libffi-dev -y
+    sudo apt-get install libsodium-dev -y
     
 Python 3.5 should come with pip, but for if some reason you don't have it, run the following:
 
