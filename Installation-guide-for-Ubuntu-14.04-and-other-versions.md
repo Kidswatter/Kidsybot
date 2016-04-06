@@ -55,7 +55,7 @@ Python 3.5 should come with pip, but for if some reason you don't have it, run t
     wget https://bootstrap.pypa.io/get-pip.py
     sudo python3.5 get-pip.py
 
-## 3: Download and setup MusicBot
+## 2: Download and setup MusicBot
 
 Run the following commands to download MusicBot:
 
@@ -63,7 +63,7 @@ Run the following commands to download MusicBot:
     cd MusicBot
     git checkout v1.9.7rc7
 
-### 3.a: Install python dependencies
+### 2.a: Install python dependencies
 
 This next step is somewhat optional, as MusicBot will attempt to do this for you if you haven't, but may require root to do so.  
 
@@ -71,7 +71,7 @@ This next step is somewhat optional, as MusicBot will attempt to do this for you
     
 This installs the various python dependencies used by the bot.
 
-### 3.b: Change configuration file
+### 2.b: Change configuration file
 
 A fairly easy way to edit the configuration is with SFTP software, such as CyberDuck or WinSCP or Filezilla. Filezilla works on Linux, Windows, and Mac computers, CyberDuck works with Windows and Mac computers, and WinSCP only works with Windows computers. Linux users can also generally use the file manager built into their distro - try looking in the file menu for a 'Connect to server' option. For the purposes of this tutorial, we will explain how to use CyberDuck to access your server's files, but a quick Google should help you understand how to use other tools similarly.
 
@@ -101,7 +101,7 @@ Now you require a text editor other than notepad, as notepad won't work for this
 
 Read through the various comments in the file and set options as you please. To save to the server, just save the file in the editor where it is. It should automatically upload.
 
-### 3.c: Start the bot (non permanent for testing)
+### 2.c: Start the bot (non permanent for testing)
 
 **If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
 
@@ -124,7 +124,7 @@ If you see this:
 
 that means everything is good and running correctly!
 
-### 3.d: Start the bot (permanent with screen)
+### 2.d: Start the bot (permanent with screen)
 
 Close the test bot first by hitting `Ctrl+C` in the SSH window while the bot is running.  You may need to press it a few times.
 
