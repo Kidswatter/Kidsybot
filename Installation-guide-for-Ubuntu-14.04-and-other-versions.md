@@ -1,4 +1,4 @@
-**THIS GUIDE IS FOR INSTALLING THE `develop` BRANCH OF THE MUSIC BOT ON A MACHINE RUNNING UBUNTU 14.04.** If you are not using Ubuntu 14.04, please use another article to install your RhinoBot. This guide has the possibility of breaking other versions of Ubuntu.
+**THIS GUIDE IS FOR INSTALLING MUSICBOT ON A MACHINE RUNNING UBUNTU 14.04.** If you are not using Ubuntu 14.04, please use another article. This guide has the possibility of breaking other versions of Ubuntu.
 
 # Table of Contents
 
@@ -7,19 +7,16 @@
 1. [Step 1: Preparation](#step-1-preparation)
     - [1.a: Setup Ubuntu](#1a-setup-ubuntu)
     - [1.b: Updating package lists and adding repositories](#1b-updating-package-lists-and-adding-repositories)
-2. [Step 2: Installing Git](#step-2-installing-git)
-3. [Step 3: Installing Python 3.5](#step-3-installing-python-35)
-4. [Step 4: Installing ffmpeg](#step-4-installing-ffmpeg)
-5. [Step 5: Installing opus codec](#step-5-installing-opus-codec)
-6. [Step 6: Install and configure RhinoBot](#step-6-install-and-configure-rhinobot)
-    - [6.a: Download RhinoBot](#6a-download-rhinobot)
-    - [6.b: Change configuration file](#6b-change-configuration-file)
-    - [6.c: Start the bot (non permanent for testing)](#6c-start-the-bot-non-permanent-for-testing)
-    - [6.d: Start the bot (permanent with screen)](#6d-start-the-bot-permanent-with-screen)
+    - [1.c: Installing dependencies](#1c-installing-dependencies)
+3. [Step 2: Download and setup MusicBot](#2-download-and-setup-musicbot)
+    - [2.a: Install python dependencies](#2a-install-python-dependencies)
+    - [2.b: Change configuration file](#2b-change-configuration-file)
+    - [2.c: Start the bot (non permanent for testing)](#2c-start-the-bot-non-permanent-for-testing)
+    - [2.d: Start the bot (permanent with screen)](#2d-start-the-bot-permanent-with-screen)
 
 # Introduction
 
-A Ubuntu server is a very cheap way to have your RhinoBot to stay online permanently, as many websites offer cheap VPS hosting for Ubuntu servers. If you're looking for a cheap server provider, (@deansheather) would suggest a [Digital Ocean](https://www.digitalocean.com/) (not an affiliate link) *'droplet'* for hosting your server. All you need to run this bot is a $5 per month 512mb droplet running Ubuntu 14.04.
+A Ubuntu server is a very cheap way to have your MusicBot to stay online permanently, as many websites offer cheap VPS hosting for Ubuntu servers. If you're looking for a cheap server provider, (@deansheather) would suggest a [Digital Ocean](https://www.digitalocean.com/) (not an affiliate link) *'droplet'* for hosting your server. All you need to run this bot is a $5 per month 512mb droplet running Ubuntu 14.04.
 
 Every block of code written in a box that looks like the box below should be run on your server unless otherwise stated.
 
@@ -35,7 +32,7 @@ Once you've created your Ubuntu server on your host, it's a good idea to set up 
 
 ### 1.b: Updating package lists and adding repositories
 
-First of all, we'll add the repositories needed to install prerequisites for RhinoBot later on in this tutorial.
+First of all, we'll add the repositories needed to install prerequisites for MusicBot later on in this tutorial.
 
     sudo add-apt-repository ppa:fkrull/deadsnakes -y
     sudo add-apt-repository ppa:mc3man/trusty-media -y
@@ -43,54 +40,38 @@ First of all, we'll add the repositories needed to install prerequisites for Rhi
     sudo apt-get upgrade -y
     sudo apt-get install build-essential unzip -y
 
-# Step 2: Installing Git
+## 1.c: Installing dependencies
 
-Skip this step, installing git is not necessary, and updating the wiki properly takes effort.
+These are the things we need to run the bot.
 
-# Step 3: Installing Python 3.5
-
-Now we have Git installed on this machine, we need to install Python.
-
-To install Python 3.5, run the following:
-
+    sudo apt-get install git -y
     sudo apt-get install python3.5 python3.5-dev -y
-
+    sudo apt-get install ffmpeg -y
+    sudo apt-get install libopus-dev -y
+    sudo apt-get install libffi-dev -y
+    
 Python 3.5 should come with pip, but for if some reason you don't have it, run the following:
 
     wget https://bootstrap.pypa.io/get-pip.py
     sudo python3.5 get-pip.py
 
-You have now successfully installed Python onto your machine! :)
+## 3: Download and setup MusicBot
 
-# Step 4: Installing ffmpeg
+Run the following commands to download MusicBot:
 
-To install ffmpeg, which is needed to run RhinoBot, run the following:
+    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot
+    cd MusicBot
+    git checkout v1.9.7rc7
 
-    sudo apt-get install ffmpeg -y
+### 3.a: Install python dependencies
 
-You have now successfully installed ffmpeg onto your machine! :)
+This next step is somewhat optional, as MusicBot will attempt to do this for you if you haven't, but may require root to do so.  
 
-# Step 5: Installing opus codec
+    sudo pip3.5 install --upgrade -r requirements.txt
+    
+This installs the various python dependencies used by the bot.
 
-To install opus, which is needed to run RhinoBot, run the following:
-
-    sudo apt-get install libopus-dev -y
-
-You have now successfully installed opus onto your machine! :)
-
-# Step 6: Install and configure RhinoBot
-
-Let's get right into it, shall we?
-
-### 6.a: Download RhinoBot
-
-Run the following commands to download RhinoBot:
-
-    wget https://github.com/SexualRhinoceros/MusicBot/archive/v1.9.5rc7.zip
-    unzip v1.9.5rc7.zip
-    cd MusicBot-1.9.5rc7/
-
-### 6.b: Change configuration file
+### 3.b: Change configuration file
 
 A fairly easy way to edit the configuration is with SFTP software, such as CyberDuck or WinSCP or Filezilla. Filezilla works on Linux, Windows, and Mac computers, CyberDuck works with Windows and Mac computers, and WinSCP only works with Windows computers. Linux users can also generally use the file manager built into their distro - try looking in the file menu for a 'Connect to server' option. For the purposes of this tutorial, we will explain how to use CyberDuck to access your server's files, but a quick Google should help you understand how to use other tools similarly.
 
@@ -108,25 +89,25 @@ Select 'SFTP (SSH File Transfer Protocol)' from the dropdown and enter your serv
 
 ![CyberDuck connection settings](http://i.imgur.com/ThWigdU.png)
 
-Open the MusicBot-develop folder, and then the config folder.
+Open the MusicBot folder, and then the config folder.
 
 ![CyberDuck config folder](http://i.imgur.com/w4Pr0mN.png)
 
 Now you require a text editor other than notepad, as notepad won't work for this situation. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").
 
-**SINGLE** click `options.txt` and then select Notepad++ (or your other chosen text editor) from the 'Edit' dropdown at the top, otherwise, you'll see one big line full of stuff in notepad.
+**SINGLE** click `options.ini` and then select Notepad++ (or your other chosen text editor) from the 'Edit' dropdown at the top, otherwise, you'll see one big line full of stuff in notepad.
 
-![CyberDuck open options.txt](http://i.imgur.com/GthqaYC.png)
+![CyberDuck open options.ini](http://i.imgur.com/GthqaYC.png)
 
-Change the configuration settings to what you need according to [this wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration-file "develop branch configuration file"). To save to the server, just save the file in the editor where it is. It should automatically upload.
+Read through the various comments in the file and set options as you please. To save to the server, just save the file in the editor where it is. It should automatically upload.
 
-### 6.c: Start the bot (non permanent for testing)
+### 3.c: Start the bot (non permanent for testing)
 
 **If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
 
 Log into the bot's account on your Discord client and join the server you want your bot to live on. Then, log out of the bot's account on your Discord client.
 
-Go back to the SSH for your server and make sure you're in the `MusicBot-develop` folder (you should see `username@host:~/MusicBot-develop$` or something similar in front of the cursor).
+Go back to the SSH for your server and make sure you're in the `MusicBot` folder (you should see `username@host:~/MusicBot$` or something similar in front of the cursor).
 
 Run this:
 
@@ -143,11 +124,9 @@ If you see this:
 
 that means everything is good and running correctly!
 
-If you see an error, you might want to try installing dependencies by hand. You can do this by executing the command `pip3.5 install -r requirements.txt`.
+### 3.d: Start the bot (permanent with screen)
 
-### 6.d: Start the bot (permanent with screen)
-
-Close the test bot first by hitting `Ctrl+C` in the SSH window while the bot is running.
+Close the test bot first by hitting `Ctrl+C` in the SSH window while the bot is running.  You may need to press it a few times.
 
 Run this to make a `screen` console:
 
