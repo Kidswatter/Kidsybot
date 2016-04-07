@@ -14,6 +14,12 @@ You probably installed python wrong.  See: http://stackoverflow.com/questions/23
 ### `AttributeError: module 'discord' has no attribute 'opus'`
 The old version of discord.py (which you get by running `pip install discord.py`) doesn't support voice; only the async branch does.  You need git to install the async branch, which is why we have you install git.
 
+### Nobody else can use !volume commands
+Volume is disabled for users other than owner by default. You can change the bot's volume locally.  If you want your users to be able to change the bot's volume edit `permissions.ini` and give default role `volume`
+
+### I edited `permissions.ini` and nobody can use commands!!
+You need to make sure you uncommented the line. remove the `;` in front of any line you are using.  If you edited `GrantToRoles` or `UserList` be sure you added a role ID or a user ID not their names. 
+
 ### Wtf is this?
 ##### `[s16le @ 0x2c50f80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2216 >= 2191`
 
