@@ -18,7 +18,7 @@ The old version of discord.py (which you get by running `pip install discord.py`
 The command that you are trying to use is not whitelisted for your group. Most of the time this comes from `!volume`.  If you want your users to be able to use different commands, you need to edit `permissions.ini` and add the command to the `CommandWhitelist`
 
 ### I edited `permissions.ini` and nobody can use commands still!!
-You need to make sure you uncommented the line. remove the `;` in front of any line you are using.  If you edited `GrantToRoles` or `UserList` be sure you added a role ID or a user ID not their names. 
+You need to make sure you uncommented the line. remove the `;` in front of any line you are using.  If you edited `GrantToRoles` or `UserList` be sure you added a discord role ID or a user ID not their names. 
 
 ### Wtf is this?
 ##### `[s16le @ 0x2c50f80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2216 >= 2191`
