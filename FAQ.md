@@ -14,9 +14,8 @@ You probably installed python wrong.  See: http://stackoverflow.com/questions/23
 ### `AttributeError: module 'discord' has no attribute 'opus'`
 The old version of discord.py (which you get by running `pip install discord.py`) doesn't support voice; only the async branch does.  You need git to install the async branch, which is why we have you install git.
 
-### `You don't have permission to use that command.
-Reason: This command is not whitelisted for your group (Default).`
-Volume is disabled for users other than owner by default. You can change the bot's volume locally.  If you want your users to be able to change the bot's volume edit `permissions.ini` and give default role `volume`
+### `You don't have permission to use that command. Reason: This command is not whitelisted for your group (Default).`
+The command that you are trying to use is not whitelisted for your group. Most of the time this comes from `!volume`.  If you want your users to be able to use different commands, you need to edit `permissions.ini` and add the command to the `CommandWhitelist`
 
 ### I edited `permissions.ini` and nobody can use commands!!
 You need to make sure you uncommented the line. remove the `;` in front of any line you are using.  If you edited `GrantToRoles` or `UserList` be sure you added a role ID or a user ID not their names. 
