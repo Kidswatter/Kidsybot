@@ -39,7 +39,7 @@ First of all, we'll add the repositories needed to install prerequisites for Mus
     sudo add-apt-repository ppa:mc3man/trusty-media -y
     sudo apt-get update -y
     sudo apt-get upgrade -y
-    sudo apt-get install build-essential unzip -y
+    sudo apt-get install build-essential unzip software-properties-common -y
 
 ## 1.c: Installing dependencies
 
