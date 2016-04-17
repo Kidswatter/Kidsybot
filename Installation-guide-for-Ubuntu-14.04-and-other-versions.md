@@ -69,7 +69,7 @@ Run the following commands to download MusicBot:
 
 This next step is somewhat optional, as MusicBot will attempt to do this for you if you haven't, but may require root to do so.  
 
-    sudo pip3.5 install --upgrade -r requirements.txt
+    sudo -H pip3.5 install --upgrade -r requirements.txt
     
 This installs the various python dependencies used by the bot.
 
