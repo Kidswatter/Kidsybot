@@ -37,35 +37,38 @@ Copy and paste the **second** set of numbers, and separate multiple text channel
 
 ## MusicBot
 
+The starting volume of the bot. Scale of .01 to 1.0, 1.0 being 100% volume.  
+
     [MusicBot]
     DefaultVolume = 0.45  
 
-The starting volume of the bot. Scale of .01 to 1.0, 1.0 being 100% volume. 
+**Deprecated in favor of permissions**
 
     WhiteListCheck = no
 
-**Deprecated in favor of permissions**
+Skips required to skip a song.  Whichever is lower will be used.  
+Skip ratio refers to the percent of non-deafened, non-owner users in the voice channel needed to skip a song.  
 
     SkipsRequired = 4
     SkipRatio = 0.5
 
 If no, deletes videos after they have been played. If the video is still in the queue after playing, the bot will avoid redownloading.  
 
-    SaveVideos = yes
+    SaveVideos = yes  
 
-Mentions the user who queued a song when the song plays
+Mentions the user who queued a song when the song plays.  
   
-    NowPlayingMentions = no
+    NowPlayingMentions = no  
 
-On startup, if the owner is in a voice channel, join that channel. Auto joining a server without the owner being on is currently being worked on. 
+On startup, if the owner is in a voice channel, join that channel. Auto joining a server without the owner being online  is being worked on.  
 
     AutoSummon = yes
 
-Play random songs out of included playlist when nothing is queued  
+Play random songs out of included playlist when nothing is queued.  
 
     UseAutoPlaylist = yes
 
-Prints extra output in the console and some errors to chat.  
-This option is a work in progress, don't expect much.  You might as well just leave it on for now.  
+Debug prints extra output in the console and some errors to chat.  
+This option is a work in progress, don't expect much.  
 
     DebugMode = no
