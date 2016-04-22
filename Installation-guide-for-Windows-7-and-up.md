@@ -63,3 +63,5 @@ Log into the bot's account in your browser (you can use a private tab so you don
 Go back to the main MusicBot directory and double click `runbot.bat`. If you don't see any errors, that means everything is good and running correctly! You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot.  If you see an error and you don't know what it means, ask about it on the help server.
 
 **NOTE:** By default, the `AutoSummon` option is enabled.  This means the bot will automatically join the owner's voice channel. If the owner isn't in a voice channel, join one and use the command `!summon` to bring the bot into your channel.
+
+If you close the console, turn off your computer or put it to sleep the bot will go away. To keep this bot running 24/7 you must have it running on a computer or server. 
