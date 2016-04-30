@@ -38,7 +38,7 @@ You have now successfully installed Python onto your machine! :smile:
 
 ### 2.a: Download MusicBot
 
-##### Latest Version: [Review](https://github.com/SexualRhinoceros/MusicBot/archive/review.zip)
+#### Latest Version: [Review](https://github.com/SexualRhinoceros/MusicBot/archive/review.zip)
 
 Download the bot and extract the .zip file into a convenient location (your Desktop, for example).
 
