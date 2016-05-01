@@ -26,7 +26,7 @@ If you do not have a text editor, download a basic text editor from the Apple Ap
 
 ### 1.b: Installing dependencies
 
-To install dependencies, enter the following command **without sudo**
+To install dependencies, enter the following commands **without sudo**
 
     brew install git
     brew install python3
