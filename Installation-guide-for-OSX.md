@@ -75,6 +75,10 @@ After downloading you will need to unzip the the folder using the Archive Utilit
 
 This next step is somewhat optional, as MusicBot will attempt to do this for you if you haven't. On OSX, you should run these commands **without root**, since Homebrew does not clobber your system Python.
 
+Open Terminal (the mac equivalent to Windows cmd) This will be used for the bot the whole time. When Terminal starts up, enter the following:
+
+    cd desktop
+    cd MusicBot-review
     pip3.5 install --upgrade -r requirements.txt
     
 This installs the various python dependencies used by the bot.
@@ -142,6 +146,6 @@ If you ever want to have a look at the bot's console logs, SSH back into the mac
     screen -r bot
 
 That should bring everything back up.
-**NOTE: You can close the terminal without the bot disconnection, however if you shut down your computer, close the lid, or let it sleep you will have to restart the bot again.**
+**NOTE: You can close the terminal without the bot disconnecting, however if you shut down your computer, close the lid, or let it sleep you will have to restart the bot again.**
 
 You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot. :grin:
