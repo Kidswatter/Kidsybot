@@ -9,8 +9,7 @@
     - [2.a: Install python dependencies](#2a-install-python-dependencies)
     - [2.b: Change configuration file](#2b-change-configuration-files)
 3. [Step 3: Start the bot](#3-start-the-bot)
-    - [3.a: Test the bot (non permanent)](#3a-test-the-bot-non-permanent)
-    - [3.b: Start the bot (permanent with screen)](#3b-start-the-bot-permanent-with-screen)
+    - [3.a: Running the bot in a Screen](#3a-running-the-bot-in-a-screen)
 
 # Introduction
 
