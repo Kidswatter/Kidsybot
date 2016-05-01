@@ -3,7 +3,7 @@
 [Introduction](#introduction)
 
 1. [Step 1: Preparation](#step-1-preparation)
-    - [1.a: Install a TextEditor and Homebrew](#1a-install-a-texteditor-and-homebrew)
+    - [1.a: Install a TextEditor Homebrew and Python](#1a-install-a-texteditor-homebrew-and-python)
     - [1.b: Installing dependencies](#1b-installing-dependencies)
 2. [Step 2: Download and setup MusicBot](#2-download-and-setup-musicbot)
     - [2.a: Install python dependencies](#2a-install-python-dependencies)
@@ -20,16 +20,17 @@ Installing the bot on OSX requires the downloading of several libraries. These l
 
 Let's get everything ready to install.
 
-### 1.a: Install a TextEditor and Homebrew
+### 1.a: Install a TextEditor Homebrew and Python
 
 If you do not have a text editor, download a basic text editor from the Apple App Store (TextWrangler, XCode, or equivalent) or download an outside editor such as [Atom](https://atom.io/). Following that, go to [Homebrew](http://brew.sh/) and download Homebrew by running the command line on their website through Terminal (mac's version of cmd). Run `brew update` to fetch the latest package data.
+
+Next, you need to install Python3.5 or later. You can either navigate to Python's [Download](https://www.python.org/downloads) page and `Download Python 3.5.1` or [ClickHere](https://www.python.org/ftp/python/3.5.1/python-3.5.1-macosx10.6.pkg) to start the download automatically.
 
 ### 1.b: Installing dependencies
 
 To install dependencies, enter the following commands **without sudo**
 
     brew install git
-    brew install python3
     brew install ffmpeg
     brew install opus
     brew install libffi
@@ -55,11 +56,12 @@ This installs the various python dependencies used by the bot.
 
 **If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
 
-The configuration files are located in the `config/` folder. There are two files, `example_options.ini` and `example_permissions.ini` that tell you how to configure the bot. You should copy these files to `options.ini` and `permissions.ini` respectively. **Your bots login credentials and YOUR OwnerID will go in the `options.ini` file!**
+The configuration files are located in the `config/` folder. There are two files, `example_options.ini` and `example_permissions.ini` that tell you how to configure the bot. You should copy and rename these files to `options.ini` and `permissions.ini` respectively, then edit them. **Your bots login credentials and YOUR OwnerID will go in the `options.ini` file!**
 
 ## 3: Start the bot 
 
 Log into the bot's account on your Discord client and join the server you want your bot to live on. Then, log out of the bot's account and log back into your Main Account. *This only needs to be performed once.*
+If you are using a `BOT` account and put your bot's token in the `options.ini` file you don't need to do this.
 
 With terminal open type the following to access the MusicBot folder:
 
