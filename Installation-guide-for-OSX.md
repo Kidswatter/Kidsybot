@@ -26,6 +26,36 @@ If you do not have a text editor, download a basic text editor from the Apple Ap
 
 Next, you need to install Python3.5 or later. You can either navigate to Python's [Download](https://www.python.org/downloads) page and `Download Python 3.5.1` or [ClickHere](https://www.python.org/ftp/python/3.5.1/python-3.5.1-macosx10.6.pkg) to start the download automatically.
 
+**Installing Python3.5**
+Navigate to and open the `python-3.5.1-macosx10.6.pkg` you downloaded.
+
+This will be the first thing you see when it opens. 
+**Click Continue.**
+
+![Python installer initial screen](http://i.imgur.com/rNDbcMQ.png)
+
+**Click Continue.**
+
+![Python read me screen](http://i.imgur.com/BvWwg2a.png)
+
+**Read the Software License Agreement then Click Continue**
+
+![Python license screen](http://i.imgur.com/SUWJePm.png)
+
+**Click Agree.**
+
+![Python license accept screen](http://i.imgur.com/RuKTcG3.png)
+
+**Choose your installation destination (Recommended: Downloads), then Click Install.**
+
+![Python installation destination and type](http://i.imgur.com/tNHIehd.png)
+
+**After the installation screen you will see this... Click Close.**
+
+![Python install successful screen](http://i.imgur.com/pF7rBq8.png)
+
+**Congratulations you have successfully installed Python3.5!!**
+
 ### 1.b: Installing dependencies
 
 To install dependencies, enter the following commands **without sudo**
