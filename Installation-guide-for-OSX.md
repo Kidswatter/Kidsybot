@@ -100,15 +100,14 @@ Configure the file however you want, it should explain everything you need. The 
 Log into the bot's account on your Discord client and join the server you want your bot to live on. Then, log out of the bot's account and log back into your Main Account. *This only needs to be performed once.*
 If you are using a `BOT` account and put your bot's token in the `options.ini` file you don't need to do this.
 
-With terminal open type the following to access the MusicBot folder:
+To start the bot open terminal. With terminal open type the following to access the MusicBot folder:
 
     cd desktop
     cd MusicBot-review
 
-### 3.a Test the bot (non permanent)
-Make sure you're still in the `MusicBot` folder (you should see `Name-MacBook-Pro:MusicBot-review Username$` or something similar in front of the cursor). If you don't see that repeat, type `cd` followed by `return` and repeat the above steps.
+(you should see `Name-MacBook-Pro:MusicBot-review Username$` or something similar in front of the cursor)
 
-Run this:
+Next run this:
 
     python3.5 run.py
 
@@ -123,9 +122,17 @@ If you see this:
 
 that means everything is good and running correctly!
 
-### 3.b: Start the bot (permanent with screen)
+### 3.a: Running the bot in a Screen
 
-Close the test bot first by hitting `Ctrl+C` in the Terminal window while the bot is running.  You may need to press it a few times.
+Running the bot in a screen allows you to close Terminal without it shutting down the bot. If you don't run the bot in a screen, closing Terminal will cancel the bots operations and disconnect it from Discord. Screen simply allows you to close Terminal with out this happening.
+**(This is an optional step that is only for user preference. You don't have to do this.)**
+
+If your bot is currently running cancel its operations by pressing `Ctrl+C` before continuing on to these steps.
+
+If you aren't already in a the music bots folder through Terminal go ahead and repeat these steps (if your Terminal line looks like this `Name-MacBook-Pro:MusicBot-review Username$` or similar, skip to "Run this to make a `screen` console):
+
+    cd desktop
+    cd MusicBot-review
 
 Run this to make a `screen` console:
 
