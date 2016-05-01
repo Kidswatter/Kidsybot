@@ -31,27 +31,21 @@ Navigate to and open the `python-3.5.1-macosx10.6.pkg` you downloaded.
 
 This will be the first thing you see when it opens. 
 **Click Continue.**
-
 ![Python installer initial screen](http://i.imgur.com/rNDbcMQ.png)
 
 **Click Continue.**
-
 ![Python read me screen](http://i.imgur.com/BvWwg2a.png)
 
 **Read the Software License Agreement then Click Continue**
-
 ![Python license screen](http://i.imgur.com/SUWJePm.png)
 
 **Click Agree.**
-
 ![Python license accept screen](http://i.imgur.com/RuKTcG3.png)
 
 **Choose your installation destination (Recommended: Downloads), then Click Install.**
-
 ![Python installation destination and type](http://i.imgur.com/tNHIehd.png)
 
 **After the installation screen you will see this... Click Close.**
-
 ![Python install successful screen](http://i.imgur.com/pF7rBq8.png)
 
 **Congratulations you have successfully installed Python3.5!!**
@@ -72,6 +66,9 @@ To download the latest version of the music bot use the following URL and downlo
 
     https://github.com/SexualRhinoceros/MusicBot/archive/review.zip
 
+After downloading you will need to unzip the the folder using the Archive Utility or any other Unarchiver app. See below:
+![Unzip with Unarchiver](http://i.imgur.com/JrkoMgG.png)
+
 **NOTE: Do NOT change the folder name or move this folder from the desktop, this will mess up the future commands you need to type. (this will be updated in the near future to allow placement of the MusicBot folder wherever you want it)**
 
 ### 2.a: Install python dependencies
@@ -86,7 +83,13 @@ This installs the various python dependencies used by the bot.
 
 **If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
 
-The configuration files are located in the `config/` folder. There are two files, `example_options.ini` and `example_permissions.ini` that tell you how to configure the bot. You should copy and rename these files to `options.ini` and `permissions.ini` respectively, then edit them. **Your bots login credentials and YOUR OwnerID will go in the `options.ini` file!**
+The configuration files are located in the `config` folder. There are two files, `example_options.ini` and `example_permissions.ini` that tell you how to configure the bot. You should copy and rename these files to `options.ini` and `permissions.ini` respectively, then edit them. 
+
+![Music Bot Config Folder](http://i.imgur.com/GnzWRNG.png)
+
+Open options.ini in a text editor of your choosing from the one you downloaded at the beginning of this guide. I suggest TextWrangler or Atom.
+
+Configure the file however you want, it should explain everything you need. The three things you MUST change are the bot's email, password and your OwnerID. If you have any further questions, you can ask on the help server.
 
 ## 3: Start the bot 
 
