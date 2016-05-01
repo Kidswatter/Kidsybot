@@ -123,7 +123,7 @@ that means everything is good and running correctly!
 
 ### 3.a: Running the bot in a Screen
 
-Running the bot in a screen allows you to close Terminal without it shutting down the bot. If you don't run the bot in a screen, closing Terminal will cancel the bots operations and disconnect it from Discord. Screen simply allows you to close Terminal with out this happening.
+Running the bot in a screen allows you to close Terminal without it shutting down the bot. If you don't run the bot in a screen, closing Terminal will cancel the bots operations and disconnect it from Discord. Screen simply allows you to close Terminal with out this happening.    
 **(This is an optional step that is only for user preference. You don't have to do this.)**
 
 If your bot is currently running cancel its operations by pressing `Ctrl+C` before continuing on to these steps.
