@@ -114,7 +114,7 @@ Add or remove a user from the bot blacklist.  Blacklisted users cannot use any b
 ### `!whitelist <status> <@user>`
 Add or remove a user from the bot whitelist.  Similar to the blacklist option, however the whitelist must be enabled for this to have any effect.  Permissions settings in `permissions.ini` **do not** override this.
 
-**Note:** Remember to @mention the user when using this command, and to enable the `WhiteListCheck` option in `options.ini` for this command to have any effect.
+**Note:** Remember to @mention the user when using this command, and to enable the `WhiteListCheck` option in `options.ini` for this command to have any effect. Additionally, this command is not available in the `review` version of the bot as it has been removed in favor of permissions.
 
 ##### Arguments:
 - `<status>` Whether to add or remove a user.  Accepted values are `+`, `-`, `add`, and `remove`.
@@ -135,8 +135,10 @@ Prints the user's id in chat, or prints the id of the specified user.
 
 ---
 
-### `!listroles`
-DMs the user a list of roles and ids on the server.  This command is used to assist in setting up permissions, specifically the `GrantToRole` option.
+### `!listids`
+DMs the user a list of ids on the server.  This command is used to assist in setting up permissions, specifically the `GrantToRole` option, and to obtain voice channel IDs.
+
+**Note**: In the `develop` version of the bot, this command is `!listroles` and only returns information about the different roles in the server
 
 ---
 
@@ -148,7 +150,38 @@ DMs the user their permissions on the server.  Helpful for figuring out what the
 ### `!joinserver <server invite link>`
 Asks the bot to join a server.  This is the one command that can be invoked by DMing the bot.
 
-**Note:** Only the owner can use this command.  This cannot be changed through permissions.
+**Note:** Only the owner can use this command.  This cannot be changed through permissions. Additionally, bot accounts cannot join servers through invite links and must instead join through OAuth.
 
 ##### Arguments:
 - `<server invite link>` An invite link for a server, usually looks something like `http://discord.gg/somerandomtexthere`.
+
+---
+
+### `!pldump <playlist>`
+Collects URLs from a YouTube playlist or Soundcloud set and dumps them into a text file to allow use in an autoplaylist.
+
+**Note:** This command is only available in the `review` version of the bot
+
+##### Arguments:
+- `<playlist>` The link to a YouTube playlist or Soundcloud set
+
+---
+
+### `!disconnect`
+Forces the bot to drop the connection to the currently connected voice client
+
+**Note:** This command is only available in the `review` version of the bot
+
+---
+
+### `!restart`
+Forces the bot to restart gracefully
+
+**Note:** This command is only available in the `review` version of the bot
+
+---
+
+### `!shutdown`
+Forces the bot to shutdown gracefully
+
+**Note:** This command is only available in the `review` version of the bot
