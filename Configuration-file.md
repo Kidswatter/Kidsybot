@@ -7,6 +7,10 @@ Username is the email you registered the bot's discord account with.
     Username = your_bots_email@foo.com
     Password = bots_pass
 
+In the `review` version of the bot, you can specify a token instead. This is obtained by [creating a bot user](https://discordapp.com/developers/applications/me).
+
+    Token = bot_token
+
 ## Permissions
 
 You need your id, not the bot's id.  The bot does not own the bot, you do.
@@ -35,6 +39,11 @@ Copy and paste the **second** set of numbers, and separate multiple text channel
 
     ;BindToChannels = 
 
+In the `review` version of the bot, you can make the bot autojoin voice channels on start. If you are using a bot account, the bot can join multiple voice channels (one per server). To get an ID of a voice channel, use `!listids`.
+*Uncomment (remove the ; at the start of the line) and add channel IDs to enable.*  
+
+    ;AutojoinChannels =
+
 ## MusicBot
 
 The starting volume of the bot. Scale of .01 to 1.0, 1.0 being 100% volume.  
@@ -42,7 +51,7 @@ The starting volume of the bot. Scale of .01 to 1.0, 1.0 being 100% volume.
     [MusicBot]
     DefaultVolume = 0.45  
 
-**Deprecated in favor of permissions**
+In the `review` version of the bot, this option has been removed in favor of permissions.
 
     WhiteListCheck = no
 
