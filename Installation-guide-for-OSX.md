@@ -74,9 +74,10 @@ After downloading you will need to unzip the the folder using the Archive Utilit
 
 This next step is somewhat optional, as MusicBot will attempt to do this for you if you haven't.
 
-Run the following file that is located in your MusicBot's main folder.
+Run the following file that is located in your MusicBot's main folder.    
+Run this file:    
 
-    run `update_macdeps.command` file    
+    `update_macdeps.command`    
 
 *You may have to right click the file, mouse over 'Open With' then select 'Terminal.app'*    
     
@@ -99,8 +100,8 @@ Configure the file however you want, it should explain everything you need. The 
 Log into the bot's account on your Discord client and join the server you want your bot to live on. Then, log out of the bot's account and log back into your Main Account. *This only needs to be performed once.*
 If you are using a `BOT` account and put your bot's token in the `options.ini` file you don't need to do this.
 
-To start the bot navigate back to your MusicBot's main folder
-Run:
+To start the bot navigate back to your MusicBot's main folder.    
+Run:    
 
     runbot_mac.command    
 
