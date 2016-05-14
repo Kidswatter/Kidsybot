@@ -9,7 +9,7 @@
     - [2.a: Install python dependencies](#2a-install-python-dependencies)
     - [2.b: Change configuration file](#2b-change-configuration-files)
 3. [Step 3: Start the bot](#3-start-the-bot)
-4. [Step 4: Running the bot in a Screen (Optional)](#4-running-the-bot-in-a-screen)
+4. [Step 4: Running the bot in a Screen (Optional)](#4-running-the-bot-in-a-screen-optional)
 
 # Introduction
 
@@ -123,7 +123,7 @@ You don't need to do anything else! :smile: You can check out the [wiki articles
     
     
     
-### 4: Running the bot in a Screen(Optional)
+### 4: Running the bot in a Screen (Optional)
 
 Running the bot in a screen allows you to close Terminal without it shutting down the bot. If you don't run the bot in a screen, closing Terminal will cancel the bots operations and disconnect it from Discord. Screen simply allows you to close Terminal with out this happening.    
 **(This is an optional step that is only for user preference. You don't have to do this.)**
