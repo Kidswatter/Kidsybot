@@ -9,7 +9,7 @@
     - [2.a: Install python dependencies](#2a-install-python-dependencies)
     - [2.b: Change configuration file](#2b-change-configuration-files)
 3. [Step 3: Start the bot](#3-start-the-bot)
-    - [3.a: Running the bot in a Screen](#3a-running-the-bot-in-a-screen)
+4. [4: Running the bot in a Screen](#4-running-the-bot-in-a-screen)
 
 # Introduction
 
@@ -63,7 +63,7 @@ To install dependencies, enter the following commands **without sudo**
 
 To download the latest version of the music bot use the following URL and download it to your desktop:
 
-    https://github.com/SexualRhinoceros/MusicBot/archive/review.zip
+    (https://github.com/SexualRhinoceros/MusicBot/archive/review.zip)
 
 After downloading you will need to unzip the the folder using the Archive Utility or any other Unarchiver app. See below:
 ![Unzip with Unarchiver](http://i.imgur.com/JrkoMgG.png)
@@ -72,13 +72,11 @@ After downloading you will need to unzip the the folder using the Archive Utilit
 
 ### 2.a: Install python dependencies
 
-This next step is somewhat optional, as MusicBot will attempt to do this for you if you haven't. On OSX, you should run these commands **without root**, since Homebrew does not clobber your system Python.
+This next step is somewhat optional, as MusicBot will attempt to do this for you if you haven't.
 
-Open Terminal (the mac equivalent to Windows cmd) This will be used for the bot the whole time. When Terminal starts up, enter the following:
-
-    cd desktop
-    cd MusicBot-review
-    pip3.5 install --upgrade -r requirements.txt
+Run the following file that is located in your MusicBot's main folder.
+    run `update_macdeps.command` file
+       *You may have to right click the file, mouse over 'Open With' then select 'Terminal.app'*
     
 This installs the various python dependencies used by the bot.
 
@@ -99,16 +97,10 @@ Configure the file however you want, it should explain everything you need. The 
 Log into the bot's account on your Discord client and join the server you want your bot to live on. Then, log out of the bot's account and log back into your Main Account. *This only needs to be performed once.*
 If you are using a `BOT` account and put your bot's token in the `options.ini` file you don't need to do this.
 
-To start the bot open terminal. With terminal open type the following to access the MusicBot folder:
-
-    cd desktop
-    cd MusicBot-review
-
-(you should see `Name-MacBook-Pro:MusicBot-review Username$` or something similar in front of the cursor)
-
-Next run this:
-
-    python3.5 run.py
+To start the bot navigate back to your MusicBot's main folder
+Run:
+    runbot_mac.command
+       *You may have to right click the file, mouse over 'Open With' then select 'Terminal.app'*
 
 If you see this:
 
@@ -123,14 +115,18 @@ that means everything is good and running correctly!
 
 You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot. :grin:
 
-### 3.a: Running the bot in a Screen
+
+
+### 4: Running the bot in a Screen
 
 Running the bot in a screen allows you to close Terminal without it shutting down the bot. If you don't run the bot in a screen, closing Terminal will cancel the bots operations and disconnect it from Discord. Screen simply allows you to close Terminal with out this happening.    
 **(This is an optional step that is only for user preference. You don't have to do this.)**
 
+To make your life easier, this is best performed by keeping your MusicBot's folder on the desktop.
+
 If your bot is currently running cancel its operations by pressing `Ctrl+C` before continuing on to these steps.
 
-If you aren't already in a the music bots folder through Terminal go ahead and repeat these steps (if your Terminal line looks like this `Name-MacBook-Pro:MusicBot-review Username$` or similar, skip to "Run this to make a `screen` console):
+If you aren't already in a the music bots folder through Terminal go ahead and perform these steps (if your Terminal line looks like this `Name-MacBook-Pro:MusicBot-review Username$` or similar, skip to "Run this to make a `screen` console"):
 
     cd desktop
     cd MusicBot-review
