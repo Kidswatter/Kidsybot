@@ -77,7 +77,8 @@ This next step is somewhat optional, as MusicBot will attempt to do this for you
 Run the following file that is located in your MusicBot's main folder.
 
     run `update_macdeps.command` file    
-       *You may have to right click the file, mouse over 'Open With' then select 'Terminal.app'*    
+
+*You may have to right click the file, mouse over 'Open With' then select 'Terminal.app'*    
     
 This installs the various python dependencies used by the bot.
 
@@ -100,8 +101,10 @@ If you are using a `BOT` account and put your bot's token in the `options.ini` f
 
 To start the bot navigate back to your MusicBot's main folder
 Run:
+
     runbot_mac.command    
-       *You may have to right click the file, mouse over 'Open With' then select 'Terminal.app'*    
+
+*You may have to right click the file, mouse over 'Open With' then select 'Terminal.app'*    
 
 If you see this:
 
