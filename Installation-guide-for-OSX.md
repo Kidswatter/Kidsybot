@@ -119,9 +119,10 @@ If you see this:
 that means everything is good and running correctly!
 
 You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot. :grin:
-
-
-
+    
+    
+    
+    
 ### 4: Running the bot in a Screen
 
 Running the bot in a screen allows you to close Terminal without it shutting down the bot. If you don't run the bot in a screen, closing Terminal will cancel the bots operations and disconnect it from Discord. Screen simply allows you to close Terminal with out this happening.    
