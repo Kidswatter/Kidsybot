@@ -63,7 +63,7 @@ To install dependencies, enter the following commands **without sudo**
 
 To download the latest version of the music bot use the following URL and download it to your desktop:
 
-    (https://github.com/SexualRhinoceros/MusicBot/archive/review.zip)
+    [https://github.com/SexualRhinoceros/MusicBot/archive/review.zip]
 
 After downloading you will need to unzip the the folder using the Archive Utility or any other Unarchiver app. See below:
 ![Unzip with Unarchiver](http://i.imgur.com/JrkoMgG.png)
