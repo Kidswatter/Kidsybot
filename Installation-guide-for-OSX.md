@@ -72,8 +72,6 @@ After downloading you will need to unzip the the folder using the Archive Utilit
 
 ### 2.a: Install python dependencies
 
-This next step is somewhat optional, as MusicBot will attempt to do this for you if you haven't.
-
 Run the following file that is located in your MusicBot's main folder.    
 **Run this file:**    
 
