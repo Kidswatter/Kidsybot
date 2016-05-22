@@ -62,7 +62,7 @@ Python 3.5 should come with pip, but for if some reason you don't have it, run t
 
 Run the following commands to download MusicBot:
 
-    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b review
+    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b 1.9.5
     cd MusicBot
 
 ### 2.a: Install python dependencies
