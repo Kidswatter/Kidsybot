@@ -130,10 +130,10 @@ To make your life easier, this is best performed by keeping your MusicBot's fold
 
 If your bot is currently running cancel its operations by pressing `Ctrl+C` before continuing on to these steps.
 
-If you aren't already in a the music bots folder through Terminal go ahead and perform these steps (if your Terminal line looks like this `Name-MacBook-Pro:MusicBot-review Username$` or similar, skip to "Run this to make a `screen` console"):
+If you aren't already in a the music bots folder through Terminal go ahead and perform these steps (if your Terminal line looks like this `Name-MacBook-Pro:MusicBot-1.9.7 Username$` or similar, skip to "Run this to make a `screen` console"):
 
     cd desktop
-    cd MusicBot-review
+    cd MusicBot-1.9.7
 
 Run this to make a `screen` console:
 
