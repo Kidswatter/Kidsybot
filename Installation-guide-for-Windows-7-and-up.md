@@ -3,6 +3,7 @@
 2. [Step 1: Installing Python](#step-1-installing-python-351)
     - [1.a Download Python installer](#1a-downloading-python-installer)
     - [1.b: Install Python](#1b-install-python-351)
+    - [1.c: Install Git](#1c-install-git)
 3. [Step 2: Install and configure MusicBot](#step-2-install-and-configure-musicbot)
     - [2.a: Download MusicBot](#2a-download-musicbot)
     - [2.b: Change configuration file](#2b-change-configuration-file)
