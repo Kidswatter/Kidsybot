@@ -34,19 +34,25 @@ Once that is done, click the button labeled *Close* to finish installation.
 
 You have now successfully installed Python onto your machine! :smile:
 
+### 1.c: Install Git
+
+If you don't already have it, you need to install Git for Windows (Git Bash). [Download it here](https://git-for-windows.github.io/).
+
+To open Git Bash, open Windows Explorer in your designated folder and right-click. You will get the option `Git Bash` on the context menu. Click it to open a new shell.
+
+![Git Bash context menu](http://i.imgur.com/UUC9GKk.png) 
+
 ## Step 2: Install and configure MusicBot
 
 ### 2.a: Download MusicBot
 
-#### Latest Version: [1.9.5](https://github.com/SexualRhinoceros/MusicBot/releases/tag/1.9.5)
+With Git Bash open, run the following command to download MusicBot:
 
-Download the bot and extract the .zip file into a convenient location (your Desktop, for example).
-
-![Extracting .zip file](http://i.imgur.com/PDTvnEu.png)
+    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b 1.9.5
 
 ### 2.b: Change configuration file
 
-When the extraction finishes, a new window should appear with the following contents:
+When you have cloned using Git, you will get the MusicBot folder inside the directory. Open it.
 
 ![MusicBot contents](http://i.imgur.com/Tm0NEoW.png)
 
