@@ -20,7 +20,7 @@ The only requirement is that you have [Docker](https://docs.docker.com/mac/) ins
 
 ## Step 2: Installation
 
-Simply call `docker pull atluke/musicbot` to pull the latest image for the musicbot. To initialize your music bot, you must run it once, so type: `docker run --name musicbot atluke/musicbot`. After letting this command run, you will probably find an error about not having an configuration file. Lets fix that!
+Simply call `docker pull sidesplitter/musicbot` to pull the latest image for the musicbot. To initialize your music bot, you must run it once, so type: `docker run --name musicbot sidesplitter/musicbot`. After letting this command run, you will probably find an error about not having an configuration file. Lets fix that!
 
 ## Step 3: Configuration
 
