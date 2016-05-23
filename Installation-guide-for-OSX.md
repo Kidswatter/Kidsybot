@@ -61,14 +61,9 @@ To install dependencies, enter the following commands **without sudo**
 
 ## 2: Download and setup MusicBot
 
-To download the latest version of the music bot use the following URL and download it to your desktop:
+To get the latest version of MusicBot, run this command using Terminal:
 
-https://github.com/SexualRhinoceros/MusicBot/releases/tag/1.9.5
-
-After downloading you will need to unzip the the folder using the Archive Utility or any other Unarchiver app. See below:
-![Unzip with Unarchiver](http://i.imgur.com/JrkoMgG.png)
-
-**NOTE: Do NOT change the folder name or move this folder from the desktop, this will mess up the future commands you need to type. (this will be updated in the near future to allow placement of the MusicBot folder wherever you want it)**
+    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b 1.9.5 
 
 ### 2.a: Install python dependencies
 
