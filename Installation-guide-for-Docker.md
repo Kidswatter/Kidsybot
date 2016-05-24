@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [Installation](#installation)
-  - [Step 1: Preperation](#step-1-preperation)
+  - [Step 1: Preperation](#step-1-preparation)
   - [Step 2: Installation](#step-2-installation)
   - [Step 3: Configuration](#step-3-configuration)
 
@@ -20,12 +20,28 @@ The only requirement is that you have [Docker](https://docs.docker.com/mac/) ins
 
 ## Step 2: Installation
 
-Simply call `docker pull sidesplitter/musicbot` to pull the latest image for the musicbot. To initialize your music bot, you must run it once, so type: `docker run --name musicbot sidesplitter/musicbot`. After letting this command run, you will probably find an error about not having an configuration file. Lets fix that!
+To pull the latest version of the musicbot image, run the following:
+
+    docker pull sidesplitter/musicbot
+
+To initialize your music bot and setup the file tree, you must run it once:
+
+    docker run --name musicbot sidesplitter/musicbot
+
+After letting this command run, you will probably find an error about not having a configuration file. Let's fix that!
 
 ## Step 3: Configuration
 
-Get the [default configuration](https://raw.githubusercontent.com/SexualRhinoceros/MusicBot/review/config/example_options.ini) and save it somewhere. After editing it you can copy it to your docker container by using the following command: `docker cp [Path to options.ini] musicbot:/musicBot/config/options.ini`. Restart your docker container by typing `docker restart musicbot`. Everything should now run smoothly. If you want to change the permissions you can do the same thing only with the [permissions file](https://raw.githubusercontent.com/SexualRhinoceros/MusicBot/review/config/example_permissions.ini).
+Get the [default configuration](https://raw.githubusercontent.com/SexualRhinoceros/MusicBot/review/config/example_options.ini) and save it somewhere. When you're finished with editing it, you can copy it to your docker container by using the following command:
+
+    docker cp /path/to/options.ini musicbot:/musicBot/config/options.ini
+
+In order for the configuration to take effect, you need to restart your docker container.
+
+    docker restart musicbot
+
+Everything should now run smoothly. If you want to change the permissions you can do the same thing only with the [permissions file](https://raw.githubusercontent.com/SexualRhinoceros/MusicBot/review/config/example_permissions.ini).
 
 ***
 
-That's everthing! Check out the [wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") on how to use your bot. 
+That's everything! Check out the [wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") on how to use your bot.
