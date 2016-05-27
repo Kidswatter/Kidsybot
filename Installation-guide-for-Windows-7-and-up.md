@@ -11,11 +11,14 @@
 
 ## Step 1: Installing Python 3.5.1
 
-Python 3.5+ is required to run musicbot.
+Python 3.5+ is required to run MusicBot.
 
 ### 1.a: Downloading Python installer
 
-You can find the Windows installer for Python 3.5.1 at [Python's website](https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe "Download Python 3.5.1 for windows"). Just open the page and let it download.
+You can download the Windows installer for your appropriate system architecture here:
+
+* 32-bit: https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe
+* 64-bit: https://www.python.org/ftp/python/3.5.1/python-3.5.1-amd64.exe
 
 ### 1.b: Install Python 3.5.1
 
@@ -46,7 +49,7 @@ During the installation, select these options (which should be selected by defau
 
 To open Git Bash, open Windows Explorer in your designated folder and right-click. You will get the option `Git Bash` on the context menu. Click it to open a new shell.
 
-![Git Bash context menu](http://i.imgur.com/UUC9GKk.png) 
+![Git Bash context menu](http://i.imgur.com/ptlggmn.png) 
 
 ## Step 2: Install and configure MusicBot
 
