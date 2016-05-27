@@ -63,7 +63,7 @@ To install dependencies, enter the following commands **without sudo**
 
 To get the latest version of MusicBot, run this command using Terminal:
 
-    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b 1.9.5 
+    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master 
 
 ### 2.a: Install python dependencies
 
