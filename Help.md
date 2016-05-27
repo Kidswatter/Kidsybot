@@ -38,3 +38,7 @@ This is `ffmpeg` complaining about various issues that shouldn't impact how the 
 ### `AttributeError: 'WebSocketClientProtocol' object has no attribute 'wait_for'`
 
 This is because `discord.py` is **not up to date**. Update your dependencies using the provided `requirements.txt` (on Linux, OSX), or run the `update_deps.bat` script on Windows.
+
+### `[WinError 10038] An operation was attempted on something that is not socket`
+
+This error occurs when the websocket is closed. It is a known issue, and something that we are trying hard to develop solutions for. To fix manually, just `!restart` the bot, run `!disconnect` then `!summon`, or switch voice regions.
