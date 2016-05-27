@@ -39,6 +39,11 @@ You have now successfully installed Python onto your machine! :smile:
 
 If you don't already have it, you need to install Git for Windows (Git Bash). [Download it here](https://git-for-windows.github.io/).
 
+During the installation, select these options (which should be selected by default):
+* Use Git from Git Bash only
+* Checkout Windows-style, commit Unix-style endings
+* Use MinTTY (the default terminal MSYS2)
+
 To open Git Bash, open Windows Explorer in your designated folder and right-click. You will get the option `Git Bash` on the context menu. Click it to open a new shell.
 
 ![Git Bash context menu](http://i.imgur.com/UUC9GKk.png) 
