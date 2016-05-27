@@ -57,7 +57,7 @@ To open Git Bash, open Windows Explorer in your designated folder and right-clic
 
 With Git Bash open, run the following command to download MusicBot:
 
-    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b 1.9.5
+    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master
 
 ### 2.b: Change configuration file
 
