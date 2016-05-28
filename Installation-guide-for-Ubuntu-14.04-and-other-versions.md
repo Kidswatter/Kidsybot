@@ -46,12 +46,7 @@ First of all, we'll add the repositories needed to install prerequisites for Mus
 
 These are the things we need to run the bot.
 
-    sudo apt-get install git -y
-    sudo apt-get install python3.5 python3.5-dev -y
-    sudo apt-get install ffmpeg -y
-    sudo apt-get install libopus-dev -y
-    sudo apt-get install libffi-dev -y
-    sudo apt-get install libsodium-dev -y
+    sudo apt-get install git python3.5 python3.5-dev ffmpeg libopus-dev libffi-dev libsodium-dev -y
     
 Python 3.5 should come with pip, but for if some reason you don't have it, run the following:
 
