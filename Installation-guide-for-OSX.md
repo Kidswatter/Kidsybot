@@ -3,11 +3,15 @@
 [Introduction](#introduction)
 
 1. [Step 1: Preparation](#step-1-preparation)
-    - [1.a: Install a TextEditor Homebrew and Python](#1a-install-a-texteditor-homebrew-and-python)
-    - [1.b: Installing dependencies](#1b-installing-dependencies)
+    - [1.a: Installing a TextEditor](#1a-installing-a-texteditor)
+    - [1.b: Installing Homebrew](#1b-installing-homebrew)
+    - [1.c: Installing xcode-select](#1c-installing-xcode-select)
+    - [1.d: Installing Python](#1d-installing-python)
+    - [1.e: Installing dependencies](#1e-installing-dependencies)
 2. [Step 2: Download and setup MusicBot](#2-download-and-setup-musicbot)
-    - [2.a: Install python dependencies](#2a-install-python-dependencies)
-    - [2.b: Change configuration file](#2b-change-configuration-files)
+    - [2.a: Allowing Terminal to Run Files](#2a-allowing-terminal-to-run-files)
+    - [2.b: Install python dependencies](#2b-install-python-dependencies)
+    - [2.c: Change configuration file](#2c-change-configuration-files)
 3. [Step 3: Start the bot](#3-start-the-bot)
 4. [Step 4: Running the bot in a Screen (Optional)](#4-running-the-bot-in-a-screen-optional)
 
@@ -19,9 +23,28 @@ Installing the bot on OSX requires the downloading of several libraries. These l
 
 Let's get everything ready to install.
 
-### 1.a: Install a TextEditor Homebrew and Python
+### 1.a: Installing a TextEditor
 
-If you do not have a text editor, download a basic text editor from the Apple App Store (TextWrangler, XCode, or equivalent) or download an outside editor such as [Atom](https://atom.io/). Following that, go to [Homebrew](http://brew.sh/) and download Homebrew by running the command line on their website through Terminal (mac's version of cmd). Run `brew update` to fetch the latest package data.
+If you do not have a text editor, download a basic text editor from the Apple App Store (TextWrangler, or equivalent) or download an outside editor such as [Atom](https://atom.io/).
+
+### 1.b: Installing Homebrew
+
+Following that, you will install [Homebrew](http://brew.sh/)
+To install Homebrew open up Terminal.app found on your computer and copy+paste the following command then press `RETURN`:
+
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ 
+Run `brew update` to fetch the latest package data.
+
+###1.c: Installing xcode-select
+
+In order for the bot to function properly you need to install xcode command line tools to your mac. You will do this in Terminal.app by running the following command line:
+
+    xcode-select --install
+
+A dialog box will open asking if you want to install `xcode-select`. Select install and finish the installation.
+
+###1.d: Installing Python
 
 Next, you need to install Python3.5 or later. You can either navigate to Python's [Download](https://www.python.org/downloads) page and `Download Python 3.5.1` or [ClickHere](https://www.python.org/ftp/python/3.5.1/python-3.5.1-macosx10.6.pkg) to start the download automatically.
 
@@ -49,7 +72,7 @@ This will be the first thing you see when it opens.
 
 **Congratulations you have successfully installed Python3.5!!**
 
-### 1.b: Installing dependencies
+### 1.e: Installing dependencies
 
 To install dependencies, enter the following commands **without sudo**
 
@@ -61,11 +84,29 @@ To install dependencies, enter the following commands **without sudo**
 
 ## 2: Download and setup MusicBot
 
-To get the latest version of MusicBot, run this command using Terminal:
+To get the latest version of MusicBot, run this command using Terminal.app:
 
+    cd desktop
     git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master 
 
-### 2.a: Install python dependencies
+cd'ing to the desktop allows you to quickly find your MusicBot folder as it places the folder directly on your desktop.
+
+###2.a: Allowing Terminal to Run Files
+
+In order for Terminal.app to run the .command files needed for the bot you will need to do the following:
+
+In Terminal.app type the command bellow followed by a space:
+
+    chmod +x 
+
+Click and drag the file `update_macdeps.command` into terminal then press `RETURN`.
+Repeat the above for the `runbot_mac.command` file. You should then be able to double-click the command files to run the bot.
+
+Example:
+
+![Terminal chmod commands](http://i.imgur.com/qKrlWUt.png)
+
+### 2.b: Install python dependencies
 
 Run the following file that is located in your MusicBot's main folder.    
 **Run this file:**    
@@ -76,7 +117,7 @@ Run the following file that is located in your MusicBot's main folder.
     
 This installs the various python dependencies used by the bot.
 
-### 2.b: Change configuration files
+### 2.c: Change configuration files
 
 **If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
 
@@ -86,7 +127,7 @@ The configuration files are located in the `config` folder. There are two files,
 
 Open options.ini in a text editor of your choosing from the one you downloaded at the beginning of this guide. I suggest TextWrangler or Atom.
 
-Configure the file however you want, it should explain everything you need. The three things you MUST change are the bot's email, password and your OwnerID. If you have any further questions, you can ask on the help server.
+Configure the file however you want, it should explain everything you need. The three things you MUST change are the bot's email, password and your OwnerID. If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
 
 ## 3: Start the bot 
 
@@ -112,6 +153,7 @@ If you see this:
 that means everything is good and running correctly!
 
 You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot. :grin:
+If you have further questions please visit our [Help Server](https://discord.gg/0iqN3da4zqpJpuY0) on Discord.
     
     
     
@@ -128,7 +170,7 @@ If your bot is currently running cancel its operations by pressing `Ctrl+C` befo
 If you aren't already in a the music bots folder through Terminal go ahead and perform these steps (if your Terminal line looks like this `Name-MacBook-Pro:MusicBot-1.9.7 Username$` or similar, skip to "Run this to make a `screen` console"):
 
     cd desktop
-    cd MusicBot-1.9.7
+    cd MusicBot
 
 Run this to make a `screen` console:
 
