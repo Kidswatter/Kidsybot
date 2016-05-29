@@ -46,10 +46,10 @@ A dialog box will open asking if you want to install `xcode-select`. Select inst
 
 ###1.d: Installing Python
 
-Next, you need to install Python3.5 or later. You can either navigate to Python's [Download](https://www.python.org/downloads) page and `Download Python 3.5.1` or [ClickHere](https://www.python.org/ftp/python/3.5.1/python-3.5.1-macosx10.6.pkg) to start the download automatically.
+Next, you need to install Python3.5 or later.
+[ClickHere](https://www.python.org/ftp/python/3.5.1/python-3.5.1-macosx10.6.pkg) to start downloading Python3.5.1.
 
-**Installing Python3.5**
-Navigate to and open the `python-3.5.1-macosx10.6.pkg` you downloaded.
+After downloading, open the `python-3.5.1-macosx10.6.pkg` you downloaded to begin installation.
 
 This will be the first thing you see when it opens. 
 **Click Continue.**
