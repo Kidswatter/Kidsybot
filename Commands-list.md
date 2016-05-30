@@ -8,7 +8,7 @@ If a command has a second set of usage text, that means there's another way to u
 
 When using arguments, **do not include the brackets** (**[ ]** or **< >**).  These are for indicating the type of argument.  If an argument starts with an `@`, i.e. **`[@user]`**, this indicates that the argument should be a user mention, not just the name of the user.  Discord names are not unique, any user can change their name to anything at any time, including the name of other users.
 
-**Note**: Possible exception or caveat that the user should take note of when using the command.  For example: `!command` is not a real command, just a place holder to demonstrate the command format.
+**Note**: Possible exception or caveat that the user should take note of when using the command.  For example: `!command` is not a real command, just a place holder to demonstrate the command format.  Users should also note that if they have changed the command prefix, that their commands will start with that instead of ! (Ex. >help, >play, >id)
 
 ## Commands
 
