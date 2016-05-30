@@ -1,15 +1,14 @@
 ## Credentials
 
-The bot needs its own account to run on (not your own.)  
-Username is the email you registered the bot's discord account with.
+Public Bots (Bots that run on more than just your personal servers) must use a Discord Developer Bot Account or risk getting shutdown by the Discord Developers.  To use the bot with a bot account, you must supply a bot token, which can be obtained through [creating a bot user](https://discordapp.com/developers/applications/me).  The token key is the third key in the configuration file (options.ini)
+
+    Token = bot_token
+
+However, the bot can also be used with a standard Discord Account on personal servers.  If you choose to use a User Account with the bot, you must supply the bot account's username and password 
 
     [Credentials]
     Username = your_bots_email@foo.com
     Password = bots_pass
-
-In the `review` version of the bot, you can specify a token instead. This is obtained by [creating a bot user](https://discordapp.com/developers/applications/me).
-
-    Token = bot_token
 
 ## Permissions
 
@@ -50,10 +49,6 @@ The starting volume of the bot. Scale of .01 to 1.0, 1.0 being 100% volume.
 
     [MusicBot]
     DefaultVolume = 0.45  
-
-In the `review` version of the bot, this option has been removed in favor of permissions.
-
-    WhiteListCheck = no
 
 Skips required to skip a song.  Whichever is lower will be used.  
 Skip ratio refers to the percent of non-deafened, non-owner users in the voice channel needed to skip a song.  
