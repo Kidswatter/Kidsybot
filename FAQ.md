@@ -4,6 +4,8 @@ Do these in any Discord text channel that you can view/post messages in.
 * **User** (for `OwnerID` in the config): `\@yourname` (e.g: User `Jayden` would do `\@Jayden`).
 * **Text channel**: `\#channelname` (e.g For `#musicbothelp`, I'd do `\#musicbothelp`).
 
+In the newest versions of the Discord Client, you can also obtain the IDs of Users, Servers, and Channels through enabling "Developer Mode" in User Preferences (Appearance) and Right Clicking, Selecting "Copy ID".
+
 Alternatively, **or for other IDs**, run the MusicBot and do the command `!listids`. 
 
 ## How do I update the bot?
