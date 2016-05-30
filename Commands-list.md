@@ -12,6 +12,14 @@ When using arguments, **do not include the brackets** (**[ ]** or **< >**).  The
 
 ## Commands
 
+### `!help [command]`
+Prints a basic list of commands, or info on a command if `[command]` is specified.  Also links back to this page.
+
+##### Arguments:
+- `[command]` A command to print more info on.
+
+---
+
 ### `!play <song link>`
 ### `!play <song text to search for>`
 Add a song to the queue, or add the first youtube result for the provided search text.
@@ -107,14 +115,6 @@ Add or remove users from the bot blacklist.  Blacklisted users cannot use any bo
 ##### Arguments:
 - `<status>` Whether to add or remove users.  Accepted values are `+`, `-`, `add`, and `remove`.
 - `<@user1>...` Target users.  Must be mentions.
-
----
-
-### `!help [command]`
-Prints a basic list of commands, or info on a command if `[command]` is specified.  Also links back to this page.
-
-##### Arguments:
-- `[command]` A command to print more info on.
 
 ---
 
