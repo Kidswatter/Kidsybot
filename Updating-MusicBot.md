@@ -6,7 +6,7 @@
 - [Mac](#mac)
 
 # Introduction
-This guide tells you how to update your bot easily using Git, which you should have used when installing it for the first time. **Make sure that the bot isn't running before attempting these steps**.
+This guide tells you how to update your bot easily using Git, which you should have used when installing it for the first time. **Make sure that the bot isn't running before attempting these steps**.  Also be warned that your configuration file may have to be reconfigured if changes have been made to the configuration file in the update.
 
 # Windows
 To update MusicBot on Windows, open Git Bash in the folder that the bot is running in. This is the folder that contains most binary files such as `run.sh` and `update_deps.bat`.
