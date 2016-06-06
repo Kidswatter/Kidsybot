@@ -35,12 +35,12 @@ Once you've created your Ubuntu server on your host, it's a good idea to set up 
 
 First of all, we'll add the repositories needed to install prerequisites for MusicBot later on in this tutorial.
 
+    sudo apt-get install build-essential unzip -y
     sudo apt-get install software-properties-common -y
     sudo add-apt-repository ppa:fkrull/deadsnakes -y
     sudo add-apt-repository ppa:mc3man/trusty-media -y
     sudo apt-get update -y
     sudo apt-get upgrade -y
-    sudo apt-get install build-essential unzip -y
 
 ## 1.c: Installing dependencies
 
