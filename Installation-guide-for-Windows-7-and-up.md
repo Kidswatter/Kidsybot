@@ -67,7 +67,7 @@ When you have cloned using Git, you will get the MusicBot folder inside the dire
 
 In the `config` folder, if there isn't a file called `options.ini`, copy `example_options.ini` and rename the copy to `options.ini`.  Then, open `options.ini` in a text editor OTHER than Windows Notepad, otherwise you'll see a single line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").  Editing the options file with windows notepad will mangle the content and the bot won't be able to read it.
 
-Configure the file however you want, it should explain everything you need.  The three things you MUST change are the bot's email, password and your OwnerID. If you have any further questions, you can ask on the help server.
+Configure the file however you want, it should explain everything you need.  The three things you MUST change are the bot's email, password and your OwnerID. If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
 
 ### 2.c: Start the bot!
 
