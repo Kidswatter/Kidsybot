@@ -79,8 +79,12 @@ Watch [this video](https://www.youtube.com/watch?v=yQhdjAWmObM) for reference on
 After you've made your bot account, you need to add it to your server! 
 
 You then need to generate an OAuth link. Replace `<CLIENT_ID>` with your bot's Client/Application ID in this link:
+
 `https://discordapp.com/oauth2/authorize?&client_id=<CLIENT_ID>&scope=bot`
-It should look something like this when you're done: `https://discordapp.com/oauth2/authorize?client_id=00000000000000000&scope=bot`
+
+It should look something like this when you're done: 
+
+`https://discordapp.com/oauth2/authorize?client_id=00000000000000000&scope=bot`
 
 **NOTE:** You need to have `Manage Server` permissions in the server you want to invite the bot to. 
 
