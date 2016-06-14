@@ -86,6 +86,8 @@ It should look something like this when you're done:
 
 `https://discordapp.com/oauth2/authorize?client_id=00000000000000000&scope=bot`
 
+Take this link and put it in a browser, login to your own discord account (if required) and select the server to add the bot to. 
+
 **NOTE:** You need to have `Manage Server` permissions in the server you want to invite the bot to. 
 
 
