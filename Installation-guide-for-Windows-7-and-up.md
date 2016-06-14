@@ -71,9 +71,20 @@ Configure the file however you want, it should explain everything you need.  The
 
 ### 2.c: Start the bot!
 
-**If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot.  Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
+**Make a new BOT account for your Music Bot!**
+Go to https://discordapp.com/developers/applications/me and create a new application. 
 
-Log into the bot's account in your browser (you can use a private tab so you don't need to log out of yours) and join the server you want your bot to live on. Then, log out of the bot's account (or just close the tab if its a private tab).
+Watch [this video](https://www.youtube.com/watch?v=yQhdjAWmObM) for reference on how to make a new bot user. 
+
+After you've made your bot account, you need to add it to your server! 
+
+You then need to generate an OAuth link. Replace `<CLIENT_ID>` with your bot's Client/Application ID in this link:
+https://discordapp.com/oauth2/authorize?&client_id=<CLIENT_ID>&scope=bot
+It should look something like this when you're done: https://discordapp.com/oauth2/authorize?client_id=00000000000000000&scope=bot
+
+**NOTE:** You need to have `Manage Server` permissions in the server you want to invite the bot to. 
+
+
 
 Go back to the main MusicBot directory and double click `runbot.bat`. If you don't see any errors, that means everything is good and running correctly! You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot.  If you see an error and you don't know what it means, ask about it on the help server.
 
