@@ -119,7 +119,19 @@ This installs the various python dependencies used by the bot.
 
 ### 2.c: Change configuration files
 
-**If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
+**If you haven't already done so, you will need to create a Discord oAuth2 BOT account.**    
+Go to https://discordapp.com/developers/applications/me and create a new application.     
+Use this video for reference: https://www.youtube.com/watch?v=yQhdjAWmObM     
+
+To invite your bot to your server replace `<CLIENT ID>` with your bot's client ID in this link:    
+`https://discordapp.com/oauth2/authorize?&client_id=<CLIENT ID>&scope=bot&permissions=0`     
+
+**Example:**     
+https://discordapp.com/oauth2/authorize?client_id=17000000000000296&scope=bot&permissions=0     
+
+For more info refer to: <https://discordapp.com/developers/docs/topics/oauth2#adding-bots-to-guilds>     
+
+**Note:** You need to have the `Manage Server` permission to add it to a server...     
 
 The configuration files are located in the `config` folder. There are two files, `example_options.ini` and `example_permissions.ini` that tell you how to configure the bot. You should copy and rename these files to `options.ini` and `permissions.ini` respectively, then edit them. 
 
@@ -127,7 +139,13 @@ The configuration files are located in the `config` folder. There are two files,
 
 Open options.ini in a text editor of your choosing from the one you downloaded at the beginning of this guide. I suggest TextWrangler or Atom.
 
-Configure the file however you want, it should explain everything you need. The three things you MUST change are the bot's email, password and your OwnerID. If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
+Configure the file however you want, it should explain everything you need. The two things you MUST change are the bot's Token and your OwnerID. Begin by making the following changes to the to these lines:
+
+    ;email =
+    ;password = 
+    token = <the bots token>
+
+If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
 
 ## 3: Start the bot 
 
