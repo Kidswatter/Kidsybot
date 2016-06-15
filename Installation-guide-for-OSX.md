@@ -88,6 +88,7 @@ To get the latest version of MusicBot, run this command using Terminal.app:
 
     cd desktop
     git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master 
+    cd    
 
 cd'ing to the desktop allows you to quickly find your MusicBot folder as it places the folder directly on your desktop.
 
