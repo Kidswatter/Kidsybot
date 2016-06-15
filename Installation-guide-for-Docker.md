@@ -1,3 +1,5 @@
+#This guide is currently out of date and needs to be updated, if you are a docker user and can figure out what needs to be done please update this wiki with the proper steps to setting up the Music Bot.
+
 **THIS GUIDE IS FOR INSTALLING THE `review` BRANCH OF THE MUSIC BOT.**
 
 # Table of Contents
