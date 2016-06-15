@@ -59,19 +59,8 @@ With Git Bash open, run the following command to download MusicBot:
 
     git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master
 
-### 2.b: Change configuration file
+### 2.b: Make a new Bot Acccount/Application
 
-When you have cloned using Git, you will get the MusicBot folder inside the directory. Open it.
-
-![MusicBot contents](http://i.imgur.com/Tm0NEoW.png)
-
-In the `config` folder, if there isn't a file called `options.ini`, copy `example_options.ini` and rename the copy to `options.ini`.  Then, open `options.ini` in a text editor OTHER than Windows Notepad, otherwise you'll see a single line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").  Editing the options file with windows notepad will mangle the content and the bot won't be able to read it.
-
-Configure the file however you want, it should explain everything you need.  The three things you MUST change are the bot's email, password and your OwnerID. If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
-
-### 2.c: Start the bot!
-
-**Make a new BOT account for your Music Bot!**
 Go to https://discordapp.com/developers/applications/me and create a new application. 
 
 Watch [this video](https://www.youtube.com/watch?v=yQhdjAWmObM) for reference on how to make a new bot user. 
@@ -91,6 +80,25 @@ Take this link and put it in a browser, login to your own discord account (if re
 **NOTE:** You need to have `Manage Server` permissions in the server you want to invite the bot to. 
 
 
+### 2.c: Change configuration file
+
+When you have cloned using Git, you will get the MusicBot folder inside the directory. Open it.
+
+![MusicBot contents](http://i.imgur.com/Tm0NEoW.png)
+
+In the `config` folder, if there isn't a file called `options.ini`, copy `example_options.ini` and rename the copy to `options.ini`.  Then, open `options.ini` in a text editor OTHER than Windows Notepad, otherwise you'll see a single line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").  Editing the options file with windows notepad will mangle the content and the bot won't be able to read it.
+
+Configure the file however you want, it should explain everything you need.  You MUST change OwnerID, and add a bot token. 
+
+![Changing your options.ini](http://i.imgur.com/GoD8bGK.png)
+
+In your `options.ini` file you need to comment out the `Email =` and `Password =` by adding a `;` in front of both those lines. Then you need to remove the `;` in front of the `Token =` line, and add the token from your application. 
+
+![Getting your token](http://i.imgur.com/YW1AeQA.png)
+
+If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
+
+### 2.c: Start the bot!
 
 Go back to the main MusicBot directory and double click `runbot.bat`. If you don't see any errors, that means everything is good and running correctly! You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot.  If you see an error and you don't know what it means, ask about it on the help server.
 
