@@ -150,9 +150,6 @@ If you have any further questions, you can ask on the [help server](https://disc
 
 ## 3: Start the bot 
 
-Log into the bot's account on your Discord client and join the server you want your bot to live on. Then, log out of the bot's account and log back into your Main Account. *This only needs to be performed once.*
-If you are using a `BOT` account and put your bot's token in the `options.ini` file you don't need to do this.
-
 To start the bot navigate back to your MusicBot's main folder.    
 **Run:**    
 
