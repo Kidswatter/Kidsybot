@@ -100,9 +100,19 @@ Read through the various comments in the file and set options as you please. To 
 
 ## 3: Start the bot 
 
-**If you haven't already done so, create a COMPLETELY NEW Discord account for your bot.** You cannot share accounts with your bot - Discord doesn't allow multiple voice connections from one account (you won't be able to listen to your own bot :cry:).
+**If you haven't already done so, you will need to create a Discord oAuth2 BOT account.**    
+Go to https://discordapp.com/developers/applications/me and create a new application.     
+Use this video for reference: https://www.youtube.com/watch?v=yQhdjAWmObM     
 
-Log into the bot's account on your Discord client and join the server you want your bot to live on. Then, log out of the bot's account on your Discord client.
+To invite your bot to your server replace `<CLIENT ID>` with your bot's client ID in this link:    
+`https://discordapp.com/oauth2/authorize?&client_id=<CLIENT ID>&scope=bot&permissions=0`     
+
+**Example:**     
+https://discordapp.com/oauth2/authorize?client_id=17000000000000296&scope=bot&permissions=0     
+
+For more info refer to: <https://discordapp.com/developers/docs/topics/oauth2#adding-bots-to-guilds>     
+
+**Note:** You need to have the `Manage Server` permission to add it to a server...     
 
 ### 3.a Test the bot (non permanent)
 Go back to the SSH for your server and make sure you're in the `MusicBot` folder (you should see `username@host:~/MusicBot$` or something similar in front of the cursor).
