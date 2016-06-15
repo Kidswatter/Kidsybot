@@ -8,7 +8,8 @@ However, the bot can also be used with a standard Discord Account on personal se
 
     [Credentials]
     Username = your_bots_email@foo.com
-    Password = bots_pass
+    Password = bots_pass     
+***Note:*** *While this is still a viable option we are recommending using an oAuth BOT application instead as this is what the Discord dev's are wanting bot accounts to use.*
 
 ## Permissions
 
