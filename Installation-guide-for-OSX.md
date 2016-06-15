@@ -97,7 +97,7 @@ In order for Terminal.app to run the .command files needed for the bot you will 
 
 In Terminal.app type the command below followed by a space:
 
-    chmod + x 
+    chmod +x 
 
 Click and drag the file `update_macdeps.command` into terminal then press `RETURN`.
 Repeat the above for the `runbot_mac.command` file. You should then be able to double-click the command files to run the bot.
