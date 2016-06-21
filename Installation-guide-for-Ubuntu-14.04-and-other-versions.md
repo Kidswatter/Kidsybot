@@ -39,6 +39,7 @@ First of all, we'll add the repositories needed to install prerequisites for Mus
     sudo apt-get install software-properties-common -y
     sudo add-apt-repository ppa:fkrull/deadsnakes -y
     sudo add-apt-repository ppa:mc3man/trusty-media -y
+    sudo add-apt-repository ppa:chris-lea/libsodium -y
     sudo apt-get update -y
     sudo apt-get upgrade -y
 
