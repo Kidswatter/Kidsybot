@@ -44,8 +44,16 @@ If you don't already have it, you need to install Git for Windows (Git Bash). [D
 
 During the installation, select these options (which should be selected by default):
 * Use Git from Git Bash only
+
+![Use Git from Git Bash only](http://i.imgur.com/k1spKNz.png)
+
 * Checkout Windows-style, commit Unix-style endings
+
+![Checkout Windows-style, commit Unix-style endings](http://i.imgur.com/dKTFXBI.png)
+
 * Use MinTTY (the default terminal MSYS2)
+
+![Use MinTTY](http://i.imgur.com/P0SaClk.png)
 
 To open Git Bash, open Windows Explorer in your designated folder and right-click. You will get the option `Git Bash` on the context menu. Click it to open a new shell.
 
