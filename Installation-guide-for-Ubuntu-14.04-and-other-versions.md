@@ -97,7 +97,13 @@ Now you require a text editor other than notepad, as notepad won't work for this
 
 ![CyberDuck open options.ini](http://i.imgur.com/GthqaYC.png)
 
-Read through the various comments in the file and set options as you please. To save to the server, just save the file in the editor where it is. It should automatically upload.
+Read through the various comments in the file and set options as you please. To save to the server, just save the file in the editor where it is. It should automatically upload. The two things you MUST change are the bot's Token and your OwnerID. Begin by making the following changes to the to these lines:
+
+![Changing your options.ini](http://i.imgur.com/GoD8bGK.png)
+
+![Getting your token](http://i.imgur.com/cN4YehO.png)
+
+If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
 
 ## 3: Start the bot 
 
