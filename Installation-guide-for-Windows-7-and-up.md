@@ -9,6 +9,9 @@
     - [2.b: Change configuration file](#2b-change-configuration-file)
     - [2.c: Start the bot!](#2c-start-the-bot)
 
+[Video Walk through](https://youtu.be/x701z0evpOc): 
+*This is a video that goes along side the Wiki, it follows every step on this wiki and just to give you visual aid if you need it.*
+
 ## Step 1: Installing Python 3.5.1
 
 Python 3.5+ is required to run MusicBot.
