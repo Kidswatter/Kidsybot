@@ -1,14 +1,11 @@
-#This guide is currently out of date and needs to be updated, if you are a docker user and can figure out what needs to be done please update this wiki with the proper steps to setting up the Music Bot.
-
-**THIS GUIDE IS FOR INSTALLING THE `review` BRANCH OF THE MUSIC BOT.**
-
 # Table of Contents
 
 - [Introduction](#introduction)
 - [Installation](#installation)
-  - [Step 1: Preperation](#step-1-preparation)
-  - [Step 2: Installation](#step-2-installation)
-  - [Step 3: Configuration](#step-3-configuration)
+  - [Step 1: Preparation](#step-1-preparation)
+  - [Step 2: Download and setup](#step-2-download-and-setup)
+  - [Step 3: Build the Docker image](#step-3-build-the-docker-image)
+  - [Step 4: Run the MusicBot](#step-4-run-the-musicbot)
 
 # Introduction
 
@@ -18,32 +15,52 @@ Docker is a way to virtualize the Musicbot. By using Docker you do not have to w
 
 ## Step 1: Preparation
 
-The only requirement is that you have [Docker](https://docs.docker.com/mac/) installed. You do not require anything else. You do not need to build the image yourself as it is available on [Docker Hub](https://hub.docker.com/r/sidesplitter/musicbot/)!
+The only requirement is that you have [Docker](https://docs.docker.com/mac/) installed. You do not require anything else. 
 
-## Step 2: Installation
+## Step 2: Download and setup
 
-To pull the latest version of the musicbot image, run the following:
+Download and navigate into the latest version of the MusicBot using the following command:
 
-    docker pull sidesplitter/musicbot
+    git clone https://github.com/SexualRhinoceros/MusicBot.git 
+    cd MusicBot
 
-To initialize your music bot and setup the file tree, you must run it once:
+### 2.a: Change the configuration file
 
-    docker run --name musicbot sidesplitter/musicbot
+The configuration files are located in the `config` folder. There are two files, `example_options.ini` and `example_permissions.ini` that tell you how to configure the bot. You should copy and rename these files to `options.ini` and `permissions.ini` respectively, then edit them. 
 
-After letting this command run, you will probably find an error about not having a configuration file. Let's fix that!
+![Music Bot Config Folder](http://i.imgur.com/GnzWRNG.png)
 
-## Step 3: Configuration
+Open options.ini in a text editor of your choosing from the one you downloaded at the beginning of this guide. I suggest TextWrangler or Atom.
 
-Get the [default configuration](https://raw.githubusercontent.com/SexualRhinoceros/MusicBot/review/config/example_options.ini) and save it somewhere. When you're finished with editing it, you can copy it to your docker container by using the following command:
+Configure the file however you want, it should explain everything you need. The two things you MUST change are the bot's Token and your OwnerID. Begin by making the following changes to the to these lines:
 
-    docker cp /path/to/options.ini musicbot:/musicBot/config/options.ini
+![Changing your options.ini](http://i.imgur.com/GoD8bGK.png)
 
-In order for the configuration to take effect, you need to restart your docker container.
+![Getting your token](http://i.imgur.com/cN4YehO.png)
 
-    docker restart musicbot
+If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
 
-Everything should now run smoothly. If you want to change the permissions you can do the same thing only with the [permissions file](https://raw.githubusercontent.com/SexualRhinoceros/MusicBot/review/config/example_permissions.ini).
+## Step 3: Build the Docker image
 
-***
+From within the root project directory, run the following command:
 
-That's everything! Check out the [wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") on how to use your bot.
+      docker build -t MusicBot .
+
+This builds the Docker image for the music bot, and will take a few minutes to complete.
+
+## Step 4: Run the MusicBot
+
+From within the root project directory, run the following command:
+
+      docker run -v config:/musicBot/config MusicBot
+
+Your bot should now be running in the background!
+
+To stop MusicBot, run the following command: 
+
+      docker kill $(docker ps -q -f ancestor=MusicBot)
+  
+
+Check out the [wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to learn how to use your bot!
+
+
