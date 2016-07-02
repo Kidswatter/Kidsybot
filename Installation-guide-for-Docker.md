@@ -1,11 +1,10 @@
 # Table of Contents
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-  - [Step 1: Preparation](#step-1-preparation)
-  - [Step 2: Download and setup](#step-2-download-and-setup)
-  - [Step 3: Build the Docker image](#step-3-build-the-docker-image)
-  - [Step 4: Run the MusicBot](#step-4-run-the-musicbot)
+[Introduction](#introduction)  
+1. [Step 1: Preparation](#step-1-preparation)  
+2. [Step 2: Download and setup](#step-2-download-and-setup)  
+3. [Step 3: Build the Docker image](#step-3-build-the-docker-image)  
+4. [Step 4: Run the MusicBot](#step-4-run-the-musicbot)  
 
 # Introduction
 
