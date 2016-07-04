@@ -78,6 +78,7 @@ Run the following commands, one at a time.
 `cd /usr/src`  
 `git clone https://github.com/FFmpeg/FFmpeg.git`  
 `cd FFmpeg`  
+The following code until the next text-block is a single line (formating sometimes splits it in 2):
 `sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree`  
 Now if you own a Raspberry Pi 2 you can use -j4 appended to the following command to use all 4 cores. Make sure your raspberry Pi is properly cooled, because this will produce considerable load on the CPU for extended time. If you don't cool your Raspberry properly it might get damaged. Expect this command to take up to an hour!  Remove -j4 if you don't own a quadcore Pi.  
 `make -j4`  
