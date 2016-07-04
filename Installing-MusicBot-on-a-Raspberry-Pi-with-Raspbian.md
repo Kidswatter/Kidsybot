@@ -110,7 +110,7 @@ This installs the various python dependencies used by the bot.
 
 # Last notes
 For configuring the bot refer to the end of the [linux / ubuntu tutorial](https://github.com/SexualRhinoceros/MusicBot/wiki/Installation-guide-for-Ubuntu-14.04-and-other-versions#2b-change-configuration-file).
-If you want to run the bot when the Pi boots refer to the following tutorial (Note: The tutorial does have multiple pages, use the orange buttons to see the full tutorial). Use the commands that start the bot (from the linux tutorial) in the script instead of the shown commands in the tutorial.
+If you want to run the bot when the Pi boots refer to the following tutorial (Note: The tutorial does have multiple pages, use the orange buttons to see the full tutorial, or use the "view all steps"-button). Use the commands that start the bot (from the linux tutorial) in the script instead of the shown commands in the tutorial.
 [Awesome Tutorial](http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/)
 
 Updating the bot is also identical to the steps in the linux tutorial.
