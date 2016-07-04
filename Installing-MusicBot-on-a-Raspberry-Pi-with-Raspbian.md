@@ -23,10 +23,10 @@ Now we need install components which will be necessary for our Python build:
 ## Building Pyhton
 
 Now let's go home then download, build and install our new Python.
-Going home:
+Going home:  
 `cd ~`  
-Retrieving source codes of Python 3.5 :
-`wget https://www.python.org/ftp/python/3.5.0/Python-3.5.0.tgz`  
+Retrieving source codes of Python 3.5 :  
+`wget https://www.python.org/ftp/python/3.5.0/Python-3.5.0.tgz`    
 Unpacking sources archive (it can take approx half a minute):  
 `tar -zxvf Python-3.5.0.tgz`  
 `cd Python-3.5.0`  
