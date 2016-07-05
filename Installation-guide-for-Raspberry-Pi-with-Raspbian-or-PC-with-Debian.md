@@ -73,12 +73,13 @@ Run the following commands, one at a time.
 `cd /usr/src`  
 `sudo git clone git://git.videolan.org/x264`  
 `cd x264`  
+### Only for Raspbian  
 `sudo ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl`  
 
 ***
 ### For Debian
 If you are installing on a Debian powered machine without an ARM CPU use this instead of the previous line:  
-`sudo ./configure --enable-static --disable-opencl`  
+`sudo ./configure --enable-static --disable-opencl --disable-asm`  
 `make`  
 `sudo make install`  
 
@@ -87,10 +88,12 @@ If you are installing on a Debian powered machine without an ARM CPU use this in
 `cd /usr/src`  
 `sudo git clone https://github.com/FFmpeg/FFmpeg.git`  
 `cd FFmpeg`  
+### Only for Raspbian
 The following code until the next text-block is a single line (formating sometimes splits it in 2):  
 `sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree`  
 
 ***
+### For Debian users
 If you are installing on a Debian powered machine without an ARM CPU use this instead of the previous line:  
 `sudo ./configure --target.os=linux --enable-gpl --enable-libx264 --enable-nonfree --disable-yasm`  
 ***
