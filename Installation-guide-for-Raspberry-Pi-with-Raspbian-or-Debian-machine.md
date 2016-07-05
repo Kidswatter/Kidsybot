@@ -67,21 +67,32 @@ We will get something like this:
 ## Install H264 support  
 Run the following commands, one at a time.  
 `cd /usr/src`  
-`git clone git://git.videolan.org/x264`  
+`sudo git clone git://git.videolan.org/x264`  
 `cd x264`  
-`./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl`  
+`sudo ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl`  
+
+***
+###Optional
+If you are installing on a Debian powered machine without an ARM CPU use this instead of the previous line:  
+`sudo ./configure --enable-static --disable-
 `make`  
 `sudo make install`  
 
 ## Installing ffmpeg
 
 `cd /usr/src`  
-`git clone https://github.com/FFmpeg/FFmpeg.git`  
+`sudo git clone https://github.com/FFmpeg/FFmpeg.git`  
 `cd FFmpeg`  
 The following code until the next text-block is a single line (formating sometimes splits it in 2):  
 `sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree`  
+
+***
+If you are installing on a Debian powered machine without an ARM CPU use this instead of the previous line:  
+`sudo ./configure --target.os=linux --enable-gpl --enable-libx264 --enable-nonfree --disable-yasm`  
+***
+
 Now if you own a Raspberry Pi 2 you can use -j4 appended to the following command to use all 4 cores. Make sure your raspberry Pi is properly cooled, because this will produce considerable load on the CPU for extended time. If you don't cool your Raspberry properly it might get damaged. Expect this command to take up to an hour!  Remove -j4 if you don't own a quadcore Pi.  
-`make -j4`  
+`sudo make -j4`  
 `sudo make install`  
 
 # Installing the bot
@@ -99,6 +110,8 @@ We only need to do partial installations from the linux tutorials now, since we 
 `sudo apt-get install git libopus-dev libffi-dev libsodium-dev`  
 
 ## Download and setup the MusicBot
+First lets go back home:  
+`cd ~`  
 Run the following commands to download MusicBot:
 
 `git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master`  
@@ -110,9 +123,20 @@ This next step is somewhat optional, as MusicBot will attempt to do this for you
 `sudo -H pip3.5 install --upgrade -r requirements.txt`  
 This installs the various python dependencies used by the bot.
 
-# Last notes
+# Configuring the bot
 For configuring the bot refer to the end of the [linux / ubuntu tutorial](https://github.com/SexualRhinoceros/MusicBot/wiki/Installation-guide-for-Ubuntu-14.04-and-other-versions#2b-change-configuration-file).
+
+# Running the bot
+If you want to run the bot type the following commands into the command line (prior configuring required).  
+`cd MusicBot`  
+`python3.5 run.py`  
+
+# Automatically run the bot when booting
+
 If you want to run the bot when the Pi boots refer to the following tutorial (Note: The tutorial does have multiple pages, use the orange buttons to see the full tutorial, or use the "view all steps"-button). Use the commands that start the bot (from the linux tutorial) in the script instead of the shown commands in the tutorial.
 [Awesome Tutorial](http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/)
-
+Instead of the lines used in this tutorial, use the lines in "Running the bot".
 Updating the bot is also identical to the steps in the linux tutorial.
+***
+
+***
