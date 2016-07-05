@@ -1,4 +1,4 @@
-**THIS GUIDE IS FOR INSTALLING MUSICBOT ON A MACHINE RUNNING UBUNTU 14.04.** If you are not using Ubuntu 14.04, please use another article. This guide has the possibility of breaking other versions of Ubuntu.
+**This guide was written for Ubuntu 14.04.** If you are not using Ubuntu 14.04, this guide may not work. Future/past versions of Ubuntu may be different.
 
 # Table of Contents
 
@@ -13,7 +13,7 @@
     - [2.b: Change configuration file](#2b-change-configuration-file)
 3. [Step 3: Start the bot](#3-start-the-bot)
     - [3.a: Test the bot (non permanent)](#3a-test-the-bot-non-permanent)
-    - [3.b: Start the bot (permanent with screen)](#3b-start-the-bot-permanent-with-screen)
+    - [3.b: Start the bot (permanent)](#3b-start-the-bot-permanent)
 
 # Introduction
 
@@ -139,28 +139,60 @@ If you see this:
 
 that means everything is good and running correctly!
 
-### 3.b: Start the bot (permanent with screen)
+### 3.b: Start the bot (permanent)
 
 Close the test bot first by hitting `Ctrl+C` in the SSH window while the bot is running.  You may need to press it a few times.
 
-Run this to make a `screen` console:
+The following are solutions for running the bot permanently, even if you disconnect from SSH.
 
-    screen -S bot
+#### Tmux
+> Tmux is a more powerful version of screen, and allows for extra features such as full Unicode support, and window splitting.
 
-This creates a `screen` console with the name 'bot' so you can easily come back later if there are any problems. Don't be alarmed that the SSH window became empty.
+Run this command to make a `tmux` console:
 
-To start the bot in this screen, run:
+    tmux new -s bot
+
+You will now enter the tmux instance, clearing your window. To start the bot in tmux, run:
 
     python3.5 run.py
 
-Once that's online and good, press `Ctrl+a` then `d` separately to 'detach' from the screen. Your music bot should still be online on your server.
+Now that the bot is running, press `CTRL+B` then `d` separately to 'detach' from the tmux session. This will keep the bot running while not even needing to be connected to SSH.
 
-Now you can close your SSH window or terminal and play with your bot!
+If you ever want to have a look at the bot's console logs, SSH back into the machine and run:
+
+    tmux a
+
+#### Screen
+> Screen is a basic terminal multiplexer.
+
+Run this command to make a `screen` console:
+
+    screen -S bot
+
+You will now enter the screen instance, clearing your window. To start the bot in this screen, run:
+
+    python3.5 run.py
+
+Now that the bot is running, press `Ctrl+A` then `d` separately to 'detach' from the screen. This will keep the bot running while not even needing to be connected to SSH.
 
 If you ever want to have a look at the bot's console logs, SSH back into the machine and run:
 
     screen -r bot
 
-That should bring everything back up.
+### pm2
+> pm2 is a `node.js` application that manages your processes. You should only use it to run your bot if you have the technical knowledge and ability to follow this guide. We will not provide help for running the bot using pm2 - this guide is just here as a straight forward "how to".
 
-You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot. :grin:
+First, install `node.js`
+
+    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+
+Then, using Node's package manager (`npm`), install pm2
+
+    npm install pm2@latest -g
+
+Now start the Python script using pm2
+
+    pm2 start run.py -n "bot"
+
+To manage and review the status of the bot, type `pm2 status`. To view the logs/console for the bot, type `pm2 logs`. pm2 will restart the script if it breaks, and show you the uptime among other details on the status page.
