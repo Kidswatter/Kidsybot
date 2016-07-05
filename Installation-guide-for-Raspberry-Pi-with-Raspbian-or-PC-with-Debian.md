@@ -1,6 +1,6 @@
 # First words
 Before beginning with this tutorial make sure you have the following at hand:
-* A Raspberry Pi 2 or 3 B
+* A Raspberry Pi 2 or 3 B or a device running Debian
 * Raspbian installed on it
 * At least 3 hours of time
 * Patience
