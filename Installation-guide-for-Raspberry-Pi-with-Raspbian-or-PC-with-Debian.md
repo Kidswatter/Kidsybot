@@ -76,9 +76,9 @@ Run the following commands, one at a time.
 `sudo ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl`  
 
 ***
-###Optional
+### For Debian
 If you are installing on a Debian powered machine without an ARM CPU use this instead of the previous line:  
-`sudo ./configure --enable-static --disable-
+`sudo ./configure --enable-static --disable-opencl'  
 `make`  
 `sudo make install`  
 
