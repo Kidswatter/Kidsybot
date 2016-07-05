@@ -24,7 +24,7 @@ Now we need install components which will be necessary for our Python build:
 `sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev`  
 `sudo apt-get install libssl-dev openssl`  
 
-## Building Pyhton
+## Building Python
 
 Now let's go home then download, build and install our new Python.
 Going home:  
