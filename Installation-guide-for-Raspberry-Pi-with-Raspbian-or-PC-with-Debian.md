@@ -78,7 +78,7 @@ Run the following commands, one at a time.
 ***
 ### For Debian
 If you are installing on a Debian powered machine without an ARM CPU use this instead of the previous line:  
-`sudo ./configure --enable-static --disable-opencl'  
+`sudo ./configure --enable-static --disable-opencl`  
 `make`  
 `sudo make install`  
 
