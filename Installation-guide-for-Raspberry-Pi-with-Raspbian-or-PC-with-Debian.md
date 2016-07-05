@@ -1,8 +1,7 @@
 # First words
 Before beginning with this tutorial make sure you have the following at hand:
-* A Raspberry Pi 2 or 3 B or a device running Debian
-* Raspbian installed on it
-* At least 3 hours of time
+* A Raspberry Pi 2 or 3 B with Raspbian or a device running Debian
+* At least 3 hours of time (on Pi, potentially far less on Debian depending on your machine)
 * Patience
 * Basic Knowledge on how to use the shell 
 
