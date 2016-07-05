@@ -3,10 +3,6 @@
 
 1. Make sure you are using the [latest](https://github.com/SexualRhinoceros/MusicBot/releases/tag/1.9.5) **stable release** (currently `1.9.5`).
 2. Make sure your **dependencies are updated**. This will solve most issues.
--If you run into issues while updating, you made need to **update pip**
-*This goes into a Command Prompt/Terminal Window
-Windows: python -m pip install --upgrade pip
-Linux/Mac: python3.5 -m pip install --upgrade pip
 3. Make sure your **configuration file is correct**. Double-check it.
 4. After making any changes, or updating dependencies, **restart the bot**.
 
