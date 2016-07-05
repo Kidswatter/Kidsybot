@@ -3,7 +3,9 @@ Before beginning with this tutorial make sure you have the following at hand:
 * A Raspberry Pi 2 or 3 B with Raspbian or a device running Debian
 * At least 3 hours of time (on Pi, potentially far less on Debian depending on your machine)
 * Patience
-* Basic Knowledge on how to use the shell 
+* Basic Knowledge on how to use the shell   
+Please not that this guide needs different lines sometimes depending if you're on Raspbian or Debian. The parts where this is the case are specifically marked. Make sure you only run the commands for the environment you're running on.
+
 
 # Installing sudo and git
 Since some debian distros don't come with sudo pre-installed we're gonna install it.
