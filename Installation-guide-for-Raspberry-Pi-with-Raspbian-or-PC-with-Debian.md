@@ -123,7 +123,7 @@ We're done setting up everything and are now ready to install the bot. Enter the
 
 ## Install dependencies
 We only need to do partial installations from the linux tutorials now, since we did parts of it manually:  
-`sudo apt-get install git libopus-dev libffi-dev libsodium-dev`  
+`sudo apt-get install libopus-dev libffi-dev libsodium-dev`  
 
 ## Download and setup the MusicBot
 First lets go back home:  
