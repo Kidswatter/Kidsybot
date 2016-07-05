@@ -5,6 +5,11 @@ Before beginning with this tutorial make sure you have the following at hand:
 * Patience
 * Basic Knowledge on how to use the shell 
 
+# Installing sudo
+Since some debian distros don't come with sudo pre-installed we're gonna install it.
+Feel free to just use the su command if you know what you're doing though. If not run:  
+`apt-get install sudo`
+
 
 # Installing Python 3.5 on your Raspberry Pi
 Raspbian does not have the correct version of Python installed out of the box, so we are going to install it manually by ourselves. But first we're starting with getting everything up to date. To do this enter the following steps into the shell.
