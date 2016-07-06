@@ -43,7 +43,7 @@ If you have any further questions, you can ask on the [help server](https://disc
 
 From within the root project directory, run the following command:
 
-      docker build -t MusicBot .
+      docker build -t musicbot .
 
 This builds the Docker image for the music bot, and will take a few minutes to complete.
 
@@ -51,13 +51,13 @@ This builds the Docker image for the music bot, and will take a few minutes to c
 
 From within the root project directory, run the following command:
 
-      docker run -d -v config:/musicBot/config MusicBot
+      docker run -d -v config:/musicBot/config musicbot
 
 Your bot should now be running in the background!
 
 To stop MusicBot, run the following command: 
 
-      docker kill $(docker ps -q -f ancestor=MusicBot)
+      docker kill $(docker ps -q -f ancestor=musicbot)
   
 
 Check out the [wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to learn how to use your bot!
