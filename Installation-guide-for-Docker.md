@@ -51,7 +51,7 @@ This builds the Docker image for the music bot, and will take a few minutes to c
 
 From within the root project directory, run the following command:
 
-      docker run -d -v config:/musicBot/config musicbot
+      docker run -d -v $(pwd)/config:/musicBot/config musicbot
 
 Your bot should now be running in the background!
 
