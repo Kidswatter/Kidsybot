@@ -189,7 +189,7 @@ First, install `node.js`
 
 Then, using Node's package manager (`npm`), install pm2
 
-    npm install pm2@latest -g
+    sudo npm install pm2@latest -g
 
 Now start the Python script using pm2
 
