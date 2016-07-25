@@ -99,7 +99,7 @@ Now you require a text editor other than notepad, as notepad won't work for this
 
 Read through the various comments in the file and set options as you please. To save to the server, just save the file in the editor where it is. It should automatically upload. The two things you MUST change are the bot's Token and your OwnerID. Begin by making the following changes to the to these lines:
 
-![Changing your options.ini](http://i.imgur.com/GoD8bGK.png)
+![Changing your options.ini](http://i.imgur.com/7NBtTdf.png)
 
 ![Getting your token](http://i.imgur.com/cN4YehO.png)
 
