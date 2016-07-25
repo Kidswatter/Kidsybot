@@ -103,8 +103,6 @@ Configure the file however you want, it should explain everything you need.  You
 
 ![Changing your options.ini](http://i.imgur.com/7NBtTdf.png)
 
-In your `options.ini` file you need to comment out the `Email =` and `Password =` by adding a `;` in front of both those lines. Then you need to remove the `;` in front of the `Token =` line, and add the token from your application. 
-
 ![Getting your token](http://i.imgur.com/cN4YehO.png)
 
 If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
