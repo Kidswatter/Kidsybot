@@ -142,7 +142,7 @@ Open options.ini in a text editor of your choosing from the one you downloaded a
 
 Configure the file however you want, it should explain everything you need. The two things you MUST change are the bot's Token and your OwnerID. Begin by making the following changes to the to these lines:
 
-![Changing your options.ini](http://i.imgur.com/GoD8bGK.png)
+![Changing your options.ini](http://i.imgur.com/7NBtTdf.png)
 
 ![Getting your token](http://i.imgur.com/cN4YehO.png)
 
