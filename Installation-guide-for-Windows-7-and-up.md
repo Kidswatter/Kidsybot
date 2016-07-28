@@ -107,7 +107,7 @@ Configure the file however you want, it should explain everything you need.  You
 
 If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
 
-### 2.c: Start the bot!
+### 2.d: Start the bot!
 
 Go back to the main MusicBot directory and double click `runbot.bat`. If you don't see any errors, that means everything is good and running correctly! You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot.  If you see an error and you don't know what it means, ask about it on the help server.
 
