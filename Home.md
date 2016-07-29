@@ -5,6 +5,9 @@
 Here you will find detailed guides on how to install and use MusicBot on your computer or external server.
 
 ### I need help!
+Check out the [Help](https://github.com/SexualRhinoceros/MusicBot/wiki/Help) page in the wiki.
+
+OR
 
 Our community has a Discord server filled with helpful people who can help you if you get stuck on one of these guides. You can join the server with this invite: ["Rhino Help Server"](http://discord.me/rhinohelp).
 
