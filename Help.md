@@ -2,7 +2,7 @@
 ## Help
 **Basic troubleshooting**
 
-1. Make sure you are using the [latest](https://github.com/SexualRhinoceros/MusicBot/releases/tag/1.9.5) **stable release** (currently `1.9.5`).
+1. Make sure you are using the [latest](https://github.com/SexualRhinoceros/MusicBot/releases/tag/1.9.5) **stable release** (currently `1.9.5_2`).
 2. Make sure your **dependencies are updated**. This will solve most issues.
  * If you run into problems while updating your dependencies, you may need to **update pip.**             Insert the following command into a **Command Prompt/Terminal** window.
 
@@ -28,7 +28,7 @@ You probably **installed Python wrong**. When installing Python 3.5+ on Windows,
 
 ### `AttributeError: module 'discord' has no attribute 'opus'`
 
-Legacy versions of `discord.py` **do not support** voice connections. Update your dependencies using the provided `requirements.txt` (on Linux, OSX), or run the `update_deps.bat` script on Windows.
+Legacy versions of `discord.py` **do not support** voice connections. Update your dependencies using the provided `requirements.txt` on Linux, or by running the `update_macdeps.command` script on Mac, and the `update_deps.bat` script on Windows.
 
 ### `You don't have permission to use that command.`
 
@@ -43,7 +43,7 @@ This is `ffmpeg` complaining about various issues that shouldn't impact how the 
 
 ### `AttributeError: 'WebSocketClientProtocol' object has no attribute 'wait_for'`
 
-This is because `discord.py` is **not up to date**. Update your dependencies using the provided `requirements.txt` (on Linux, OSX), or run the `update_deps.bat` script on Windows.
+This is because `discord.py` is **not up to date**. Update your dependencies using the provided `requirements.txt` on Linux, or by running the `update_macdeps.command` script on Mac, and the `update_deps.bat` script on Windows.
 
 ### `[WinError 10038] An operation was attempted on something that is not socket`
 
