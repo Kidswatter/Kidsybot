@@ -19,6 +19,7 @@ Kidsybot is [Kidswatter](https://github.com/Kidswatter "Kidswatter's GitHub")'s 
  Please visit the commangs list by clicking [here](https://github.com/Kidswatter/Kidsybot/wiki/Commands-list "Commands List").
  
  - **What sites does *Kidsybot*'s music feature support?**
+Kidsybot uses `youtube-dl`, which supports a lot of sites, such as **YouTube** and **SoundCloud**. For a list of all supported websites, please click [here](https://rg3.github.io/youtube-dl/supportedsites.html "youtube-dl Supported Websites").
 
  - **Does *Kidsybot* support Spotify?**
  No, and probably never will. (*don't blame it for that, please*.)
@@ -29,7 +30,7 @@ Kidsybot is [Kidswatter](https://github.com/Kidswatter "Kidswatter's GitHub")'s 
  - **Does *Kidsybot* know it's not perfect?**
  No, Kidsybot is not *yet* a self-aware bot to know that it's far from perfect. (*please don't tell it that it's not perfect, it might have feelings one day.*)
  - **Why do I see *Kidsybot* being offline?**
- Unfortunately for Kidsybot, it is not being hosted on a dedicated server or a VPS, meaning it's running straight out of [Kidswatter](https://github.com/Kidswatter "Kidswatter's GitHub")'s PC, which is not running 24/7 since it's not cost-effective. Kidsybot will have its own 24/7 dedicated server either hosted on [Kidswatter](https://github.com/Kidswatter "Kidswatter's GitHub")'s spare PC (*which is currently not usable*) or on a machine from some hosting provider. (*probably in Ukraine since everything Internet-related is dirt-cheap in there*).
+ Unfortunately for Kidsybot, it is not being hosted on a dedicated server or a VPS, meaning it's running straight out of [Kidswatter](https://github.com/Kidswatter "Kidswatter's GitHub")'s PC, which is not running 24/7 since it's not cost-effective. Kidsybot will have its own 24/7 dedicated server either hosted on [Kidswatter](https://github.com/Kidswatter "Kidswatter's GitHub")'s spare PC (*which is currently not usable*) or on a machine from some hosting provider. (*probably in Ukraine since everything Internet-related is dirt-cheap in there*)
  
  - **What are the future plans for *Kidsybot*?**
  The developer of Kidsybot is a little *sillybean* and they need time to be able to write their own Python code, meaning Kidsybot is going to heavily rely on other open-source **Discord** bots for some time. (*wish me godspeed on improving my Python, please.*). Nonetheless, the things to do are not limited to but include:
